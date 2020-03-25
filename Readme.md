@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Илья Грунов](https://up.htmlacademy.ru/adaptive/19/user/1221137).
-* Наставник: `Неизвестно`.
+* Наставник: [Михал Кислый](https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
 
