@@ -1,0 +1,91 @@
+.photos-review  {
+  background-color: #ffffff;
+}
+
+.photos-review__intro,
+.photos-review__outro  {
+  @include zero-fields
+  min-height: 184px;
+  width: 245px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 47px;
+  padding-bottom: 47px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #283645;
+}
+
+.photos-review__list  {
+  @include zero-fields;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo-item  {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  min-height: 324px;
+  margin-bottom: 20px;
+}
+
+.photo-item--top  {
+  position: relative;
+  width: 100%;
+  &::before  {
+  position: absolute;
+  content: "Панорама дня";
+  font: inherit;
+  font-size: 12px;
+  line-height: 24px;
+  padding-top: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 140px;
+  height: 36px;
+  color: #ffffff;
+  background-color: #d22856;
+  top: 0;
+  right: 20px;
+  }
+}
+
+.photo-item__image  {
+  width: 100%;
+  height: auto;
+}
+
+.photo-item__description  {
+  width: 280px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 20px 14px;
+  background-color: #f2f2f2;
+  color: #283645;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photo-item__author  {
+  @include zero-fields
+  font-weight: 700;
+}
+
+.photo-item__comment-date  {
+  text-transform: uppercase;
+}
+
+.photo-item__comment  {
+  @include zero-fields;
+  padding-bottom: 5px;
+}
+
+.photo-item__likes,
+.photo-item__likes-counter {
+  color: #d22856;
+}
