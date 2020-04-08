@@ -1,11 +1,11 @@
 .proposal  {
   min-height: 871px;
   box-sizing: border-box;
-  background-color: #f2f2f2;
+  background-color: $bg-blocks-color;
 }
 
 .proposal__header  {
-  background-color: #ffffff;
+  background-color: $main-layer-color;
   padding-top: 20px;
 }
 
@@ -17,14 +17,13 @@
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-  color: #283645;
+  color: $main-dark-color;
   font-size: 24px;
   font-weight: 300;
 }
 
 .proposal__list  {
-  @include zero-fields;
-  list-style: none;
+  @include zero-list;
   padding-top: 35px;
   display: flex;
   flex-direction: column;
@@ -49,7 +48,7 @@
   padding-top: 8px;
   font-size: 14px;
   line-height: 24px;
-  color: #283645;
+  color: $main-dark-color;
 }
 
 .proposal__item--make-friends  {

@@ -11,7 +11,7 @@
   width: 320px;
   height: 395px;
   padding-top: 30px;
-  background-color: #1d2631;
+  background-color: $bg-download-app-color;
   background: url("../../img/iphone-hand-mobile@1x.png") no-repeat left bottom,
               url("../../img/bg-back-mobile@1x.jpg") no-repeat center bottom;
 }
@@ -19,7 +19,7 @@
 .download-app__slogan-text  {
   @include zero-fields;
   width: 225px;
-  color: #ffffff;
+  color: $menu-text;
   text-align: center;
   font-weight: 300;
   font-size: 24px;
@@ -35,7 +35,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #1d2631;
+  background-color: $bg-download-app-color;
 }
 
 .download-app__platforms  {
@@ -46,7 +46,7 @@
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  color: white;
+  color: $menu-text;
 }
 
 .download-app__button   {
@@ -67,7 +67,7 @@
   font-size: 18px;
   font-weight: 700;
   &:hover  {
-    color: #d22856;
+    color: $main-red;
     background-color: #ffffff;
   }
   &:active  {
@@ -78,7 +78,7 @@
 
 .download-app__description  {
   @include zero-fields;
-  color: #ffffff;
+  color: $menu-text;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;

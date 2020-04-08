@@ -1,12 +1,11 @@
 .navigation__list  {
-  @include zero-fields;
-  list-style: none;
+  @include zero-list;
 }
 
 .navigation__item  {
   display: block;
   box-shadow: inset 0 1px #000000,
-              inset 0 2px #485461;
+              inset 0 2px $menu-border;
     &:last-child  {
     border-bottom: 1px solid #000000;
     }
@@ -18,15 +17,15 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: #ffffff;
+  color: $menu-text;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 32px;
+  font-weight: $menu-font-weight;
+  font-size: $menu-font-size;
+  line-height: $menu-line-height;
   &:hover {
-  color: #d22856;
+  color: $main-red;
   }
   &:active {
-    opacity: 0.3;
+    color: $menu-active;
     }
 }
