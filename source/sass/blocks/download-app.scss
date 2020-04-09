@@ -1,0 +1,87 @@
+.download-app  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download-app__slogan  {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  width: 320px;
+  height: 395px;
+  padding-top: 30px;
+  background-color: $bg-download-app-color;
+  background: url("../../img/iphone-hand-mobile@1x.png") no-repeat left bottom,
+              url("../../img/bg-back-mobile@1x.jpg") no-repeat center bottom;
+}
+
+.download-app__slogan-text  {
+  @include zero-fields;
+  width: 225px;
+  color: $menu-text;
+  text-align: center;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.download-app__wraper  {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  min-height: 210px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $bg-download-app-color;
+}
+
+.download-app__platforms  {
+  @include zero-fields;
+  width: 210px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  color: $menu-text;
+}
+
+.download-app__button   {
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+  width: 280px;
+  height: 55px;
+  border: 3px solid #ffffff;
+  border-top-left-radius: 10% 50%;
+  border-top-right-radius: 10% 50%;
+  border-bottom-left-radius: 10% 50%;
+  border-bottom-right-radius: 10% 50%;
+  background-color: transparent;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  &:hover  {
+    color: $main-red;
+    background-color: #ffffff;
+  }
+  &:active  {
+    color: #f2bfcc;
+    background-color: #ffffff;
+  }
+}
+
+.download-app__description  {
+  @include zero-fields;
+  color: $menu-text;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: center;
+  width: 235px;
+}

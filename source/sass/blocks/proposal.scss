@@ -1,0 +1,65 @@
+.proposal  {
+  min-height: 871px;
+  box-sizing: border-box;
+  background-color: $bg-blocks-color;
+}
+
+.proposal__header  {
+  background-color: $main-layer-color;
+  padding-top: 20px;
+}
+
+.proposal__header-text  {
+  @include zero-fields;
+  margin-left: auto;
+  margin-right: auto;
+  width: 205px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: $main-dark-color;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.proposal__list  {
+  @include zero-list;
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.proposal__item  {
+  width: 266px;
+  text-align: center;
+}
+
+.proposal__title  {
+  @include zero-fields;
+  font-size: 18px;
+  padding-top: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.proposal__description  {
+  @include zero-fields;
+  padding-top: 8px;
+  font-size: 14px;
+  line-height: 24px;
+  color: $main-dark-color;
+}
+
+.proposal__item--make-friends  {
+  position: relative;
+  &::after  {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 282px;
+  top: 150px;
+  left: 0;
+  background: url("../../img/iphone-screen-mobile@1x.png") no-repeat center top;
+  }
+}

@@ -1,0 +1,16 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body  {
+@include mobile-centered;
+margin: 0 auto;
+padding: 0;
+font-family: "Open Sans", Lucida Grande, sans-serif;
+font-size: $main-font-size;
+line-height: $main-line-height;
+font-weight: $main-font-weight;
+color: $text-color;
+background-color: $bg-main-color;
+}

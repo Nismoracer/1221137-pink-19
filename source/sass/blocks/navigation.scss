@@ -1,0 +1,31 @@
+.navigation__list  {
+  @include zero-list;
+}
+
+.navigation__item  {
+  display: block;
+  box-shadow: inset 0 1px #000000,
+              inset 0 2px $menu-border;
+    &:last-child  {
+    border-bottom: 1px solid #000000;
+    }
+}
+
+.navigation__link {
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: $menu-text;
+  text-transform: uppercase;
+  font-weight: $menu-font-weight;
+  font-size: $menu-font-size;
+  line-height: $menu-line-height;
+  &:hover {
+  color: $main-red;
+  }
+  &:active {
+    color: $menu-active;
+    }
+}

@@ -1,0 +1,39 @@
+.social  {
+  @include zero-fields;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 130px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 180px;
+}
+
+.social__link  {
+  display: block;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  border: 2px solid #e9ebec;
+  border-radius: 50%;
+  &:hover  {
+  border-color: #000000;
+  }
+  &:active  {
+    border-color: #000000;
+    opacity: 0.3;
+    }
+}
+
+.social__link--tw  {
+  background: url("../../img/icon-twitter.svg") no-repeat center;
+}
+
+.social__link--fb  {
+  background: url("../../img/icon-facebook.svg") no-repeat center;
+}
+
+.social__link--ytube  {
+  background: url("../../img/icon-youtube.svg") no-repeat center;
+}
