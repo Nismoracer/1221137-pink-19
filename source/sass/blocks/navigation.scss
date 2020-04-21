@@ -1,3 +1,7 @@
+.navigation  {
+  background-color: $menu-background-color;
+}
+
 .navigation__list  {
   @include zero-list;
 }
@@ -12,7 +16,7 @@
 }
 
 .navigation__link {
-  height: 65px;
+  min-height: 64px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,3 +33,4 @@
     color: $menu-active;
     }
 }
+

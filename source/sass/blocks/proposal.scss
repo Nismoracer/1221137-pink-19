@@ -1,12 +1,18 @@
 .proposal  {
+  width: 320px;
+  margin: 0 auto;
   min-height: 871px;
   box-sizing: border-box;
   background-color: $bg-blocks-color;
 }
 
 .proposal__header  {
+  position: relative;
   background-color: $main-layer-color;
   padding-top: 20px;
+  &::after  {
+    @include bottom-edge;
+    }
 }
 
 .proposal__header-text  {

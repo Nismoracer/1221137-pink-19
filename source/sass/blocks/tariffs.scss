@@ -1,0 +1,113 @@
+.tariffs  {
+  width: 320px;
+  margin: 0 auto;
+  background-color: $bg-blocks-color;
+  padding: 90px 0px 40px 0px;
+}
+
+.table  {
+  border-collapse: collapse;
+  width: 618px;
+  height: 220px;
+}
+
+.table__cell  {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  width: 25%;
+  height: 60px;
+  text-align: center;
+}
+
+.table__cell--transparent {
+  background-color: transparent;
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+
+.table__cell--top  {
+  height: 80px;
+  color: #ffffff;
+  background-color: #283645;
+  border: 1px solid #283645;
+}
+
+.table__header  {
+  @include zero-fields;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.table__price  {
+  @include zero-fields;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.table__cell-name  {
+  @include zero-fields;
+  text-align: left;
+  padding-left: 15px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.table__cell--special {
+  position: relative;
+  border-left: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+  &::before  {
+  content: "";
+  position: absolute;
+  width: 74px;
+  height: 73px;
+  transform: scale(0.83);
+  top: -7px;
+  left: -6px;
+  background-image: url("../../img/bg-hit.svg");
+  }
+  &::after  {
+    content: "Хит";
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    }
+}
+
+.table__cell--no  {
+  position: relative;
+  &::after  {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-13px, -13px);
+  background: url("../../img/no.svg") no-repeat center;
+  }
+}
+
+.table__cell--yes  {
+  position: relative;
+  &::after  {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  transform: scale(1.5) translate(-6px, -6px);
+  background: url("../../img/yes.svg") no-repeat center;
+  }
+}
+

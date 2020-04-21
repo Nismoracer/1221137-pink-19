@@ -1,11 +1,16 @@
-.page-header  {
-  @include mobile-centered;
-  padding-top: 22px;
-  background-color: $menu-background-color;
+.page-header {
+  background-color: $bg-download-app-color;
+}
+
+.page-header__logo {
+  box-sizing: border-box;
+  min-height: 68px;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
 .page-header__logo-image,
-.page-header__toggle-image  {
+.page-header__toggle-image {
   cursor: pointer;
   &:hover path {
     fill: $main-red;
@@ -15,22 +20,11 @@
     }
 }
 
-.page-header__wrapper  {
-  min-height: 48px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.page-header__toggle {
-  width: 50px;
-  height: 24px;
-  @include zero-fields;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-}
-
-.page-header__wrapper  {
+.page-header__menu {
+  margin: 0 auto;
+  width: 320px;
+  box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  background-color: $menu-background-color;
 }
