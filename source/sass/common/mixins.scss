@@ -13,11 +13,14 @@
   content: "";
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 0;
   left: 0;
+  bottom: -25px;
   background-image: url("../../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  padding-bottom: 25px;
+  z-index: 1;
 }
 
 @mixin centralizer($width) {
