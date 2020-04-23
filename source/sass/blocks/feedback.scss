@@ -1,35 +1,48 @@
-.feedback  {
-  width: 320px;
-  margin: 0 auto;
+.feedback {
   position: relative;
   background-color: $main-layer-color;
-  box-sizing: border-box;
-  min-height: 353px;
-  padding: 40px 23px 40px 23px;
-  text-align: center;
-  &::after  {
+  border-bottom: 1px solid white;
+  &::after {
   @include bottom-edge;
   }
 }
 
-.feedback__list  {
-  @include zero-list;
+.feedback__wrapper {
+  box-sizing: border-box;
+  padding: 42px 20px 34px 20px;
+  text-align: center;
 }
 
-.feedback__item  {
+.feedback__list {
+  @include zero-list;
+  padding-bottom: 33px;
+}
+
+.feedback__item {
   @include zero-fields;
 }
 
-.feedback__author-name  {
+.feedback__author-name {
   @include zero-fields;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
+  padding-bottom: 13px;
 }
 
-.feedback_quote  {
+.feedback__author-age {
+  display: none;
+}
+
+.feedback_quote {
   @include zero-fields;
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
   color: $main-dark-color;
 }
+
+.feedback__wraper {
+  padding-bottom: 20px;
+}
+

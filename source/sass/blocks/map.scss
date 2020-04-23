@@ -1,0 +1,32 @@
+.map {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 62px;
+    left: 0;
+    top: 0;
+    background-image: url("../../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3;
+    border: 1px solid red;
+  }
+}
+
+.map__iframe {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.map__background {
+  object-fit: cover;
+  object-position: bottom;
+  width: 100%;
+  height: 200px;
+}

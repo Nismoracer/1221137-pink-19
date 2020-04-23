@@ -1,17 +1,19 @@
-.download-app  {
-  box-sizing: border-box;
+.download-app {
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top -67px center;
+}
+
+.download-app__container {
   width: 320px;
   margin: 0 auto;
   padding-top: 23px;
-  background-image: url("../../img/iphone-hand-mobile@1x.png"),
-                    url("../../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat,
-                     no-repeat;
-  background-position: top 109px left,
-                       top -67px center;
+  background-image: url("../../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: top 109px left;
 }
 
-.download-app__wrapper  {
+.download-app__wrapper {
   margin: 0 auto;
   width: 285px;
   display: flex;
@@ -20,7 +22,7 @@
   align-items: center;
 }
 
-.download-app__slogan-text  {
+.download-app__slogan-text {
   @include zero-fields;
   box-sizing: border-box;
   min-height: 370px;
@@ -31,7 +33,7 @@
   line-height: 28px;
 }
 
-.download-app__platforms  {
+.download-app__platforms {
   @include zero-fields;
   width: 210px;
   margin: 0 auto;
@@ -42,7 +44,7 @@
   color: $menu-text;
 }
 
-.download-app__button   {
+.download-app__button {
   margin-top: 30px;
   margin-bottom: 30px;
   display: block;
@@ -61,17 +63,17 @@
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
-  &:hover  {
+  &:hover {
     color: $main-red;
     background-color: #ffffff;
   }
-  &:active  {
+  &:active {
     color: #f2bfcc;
     background-color: #ffffff;
   }
 }
 
-.download-app__description  {
+.download-app__description {
   @include zero-fields;
   color: $menu-text;
   font-size: 14px;

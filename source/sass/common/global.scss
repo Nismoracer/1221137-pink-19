@@ -13,8 +13,19 @@ body {
   color: $text-color;
 }
 
-.container  {
-  width: 320px;
-  margin: 0 auto;
+.container {
+  @include centralizer(320px);
+  overflow: hidden;
 }
 
+@media (min-width: $tablet-width) {
+  .container  {
+  @include centralizer($tablet-width);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container  {
+  @include centralizer($desktop-width);
+  }
+}

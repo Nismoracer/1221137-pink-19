@@ -6,11 +6,12 @@
     <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__container">
-        <div class="page-header__menu">
+        <div class="page-header__menu  container">
           <a class="page-header__logo" aria-label="Мобильное фотоприложение Pink">
             <svg class="page-header__logo-image"version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
               <g>
@@ -40,9 +41,9 @@
         </div>
       </div>
       <section class="download-app">
-        <h2 class="visually-hidden">Здесь можно скачать и установить приложение "Pink"</h2>
+        <div class="download-app__container">
           <div class="download-app__wrapper">
-            <p class="download-app__slogan-text">Взгляните на жизнь иначе!</p>
+            <h1 class="download-app__slogan-text">Взгляните на жизнь иначе!</h1>
             <a class="download-app__button" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
             <ul class="download-app__platforms">
               <li class="download-app__item">
@@ -65,18 +66,19 @@
               Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
             </p>
           </div>
+        </div>
       </section>
     </header>
     <main class="page-index">
-      <h1 class="visually-hidden">Фотоприложение "Pink": скачай, и взгляни на жизнь иначе!</h1>
+      <h2 class="visually-hidden">Фотоприложение "Pink": скачай, и взгляни на жизнь иначе!</h1>
       <section class="proposal">
-        <div class="container">
           <div class="proposal__header">
-            <p class="proposal__header-text">Устали от серости мегаполиса?</p>
-            <p class="proposal__header-text">Нам есть, что вам предложить!</p>
+            <div class="container">
+              <p class="proposal__header-text">Устали от серости мегаполиса?</p>
+              <p class="proposal__header-text">Нам есть, что вам предложить!</p>
+            </div>
           </div>
-        </div>
-          <ul class="proposal__list">
+          <ul class="proposal__list container">
             <li class="proposal__item  proposal__item--make-funny">
               <h2 class="proposal__title">Поднимает настроение</h2>
               <p class="proposal__description">Приложение позволит вам победить осеннюю
@@ -100,9 +102,9 @@
           <a class="promo__link" href="">Узнать больше об исследовании</a>
         </div>
       </section>
-      <section class="feedback  block-width">
+      <section class="feedback">
         <h2 class="visually-hidden">Отзывы о приложении</h2>
-        <div class="feedback__wrapper  slider">
+        <div class="feedback__wrapper  container">
           <ul class="feedback__list">
             <li class="feedback__item">
               <div class="feedback__author">
@@ -113,50 +115,59 @@
             </li>
           </ul>
           <p class="toogles">
-            <button class="toogles__button" type="button" aria-label="1"></button>
-            <button class="toogles__button  toogles__button--active" type="button" aria-label="2"></button>
+            <button class="toogles__button  toogles__button--active" type="button" aria-label="1"></button>
+            <button class="toogles__button" type="button" aria-label="2"></button>
             <button class="toogles__button" type="button" aria-label="3"></button>
           </p>
         </div>
       </section>
       <section class="tariffs">
-        <div class="tariffs__wraper  slider">
+        <div class="container">
           <h2 class="visually-hidden">Тарифные опции для приложения.</h2>
-          <table class="table">
-            <tr class="table__top-row">
-              <th class="table__cell  table__cell--transparent"></th>
-              <th class="table__cell  table__cell--top">
-                <b class="table__header">база</b>
+          <div class="table">
+            <ul class="table__row">
+              <li class="table__cell  table__cell-name  table__cell--transparent"></li>
+              <li class="table__cell  table__cell--top  table__cell-base">
+                <p class="table__header">база</p>
                 <p class="table__price">1,99 USD</p>
-              </th>
-              <th class="table__cell  table__cell--top  table__cell--special">
-                <b class="table__header">стандарт</b>
+              </li>
+              <li class="table__cell  table__cell--top  table__cell--narrow"></li>
+              <li class="table__cell  table__cell--top  table__cell--special">
+                <p class="table__header">стандарт</p>
                 <p class="table__price">3,99 USD</p>
-              </th>
-              <th class="table__cell  table__cell--top">
-                <b class="table__header">анлим</b>
+              </li>
+              <li class="table__cell  table__cell--top">
+                <p class="table__header">анлим</p>
                 <p class="table__price">9,99 USD</p>
-              </th>
-            </tr>
-            <tr>
-              <td class="table__cell  table__cell-name">Розовый фильтр</td>
-              <td class="table__cell  table__cell--yes"  aria-label="Да"></td>
-              <td class="table__cell  table__cell--yes"  aria-label="Да"></td>
-              <td class="table__cell  table__cell--yes"  aria-label="Да"></td>
-            </tr>
-            <tr>
-              <td class="table__cell  table__cell-name">Смайлики</td>
-              <td class="table__cell  table__cell--no"  aria-label="Нет"></td>
-              <td class="table__cell  table__cell--yes" aria-label="Да"></td>
-              <td class="table__cell  table__cell--yes" aria-label="Да"></td>
-            </tr>
-            <tr>
-              <td class="table__cell  table__cell-name">Комментарии</td>
-              <td class="table__cell  table__cell--no"  aria-label="Нет"></td>
-              <td class="table__cell  table__cell--no"  aria-label="Нет"></td>
-              <td class="table__cell  table__cell--yes" aria-label="Да"></td>
-            </tr>
-          </table>
+              </li>
+            </ul>
+            <ul class="table__row">
+              <li class="table__cell  table__cell-name">Розовый фильтр</li>
+              <li class="table__cell  table__cell--yes  table__cell-base"  aria-label="Да"></li>
+              <li class="table__cell  table__cell--narrow  table__cell--yes"></li>
+              <li class="table__cell  table__cell--yes"  aria-label="Да">
+                <p class="table__cell-description">Розовый фильтр</p>
+              <li class="table__cell  table__cell--yes"  aria-label="Да"></li>
+            </ul>
+            <ul class="table__row">
+              <li class="table__cell  table__cell-name">Смайлики</li>
+              <li class="table__cell  table__cell--no  table__cell-base"  aria-label="Нет"></li>
+              <li class="table__cell  table__cell--narrow  table__cell--no"></li>
+              <li class="table__cell  table__cell--yes" aria-label="Да">
+                <p class="table__cell-description">Смайлики</p>
+              </li>
+              <li class="table__cell  table__cell--yes" aria-label="Да"></li>
+            </ul>
+            <ul class="table__row">
+              <li class="table__cell  table__cell-name">Комментарии</li>
+              <li class="table__cell  table__cell--no  table__cell-base" aria-label="Нет"></li>
+              <li class="table__cell  table__cell--narrow  table__cell--no"></li>
+              <li class="table__cell  table__cell--no"  aria-label="Нет">
+                <p class="table__cell-description">Комментарии</p>
+              </li>
+              <li class="table__cell  table__cell--yes" aria-label="Да"></li>
+            </ul>
+          </div>
           <p class="toogles">
             <button class="toogles__button" type="button" aria-label="1"></button>
             <button class="toogles__button  toogles__button--active" type="button" aria-label="2"></button>
@@ -166,27 +177,28 @@
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__container  block-width">
-          <div class="contacts__wrapper">
+        <div class="container">
             <h3 class="contacts__header">Остались вопросы? Свяжитесь с нами!</h3>
+          <div class="contacts__wrapper">
             <div class="contacts__block">
               <p class=contacts__type>Звоните:</p>
               <a class="contacts__value" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </div>
-            <div class="contacts__wrapper">
+            <div class="contacts__block">
               <p class=contacts__type>Пишите:</p>
               <a class="contacts__value" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </div>
-            <div class="contacts__wrapper">
+            <div class="contacts__block">
               <p class=contacts__type>Приезжайте в гости:</p>
               <p class="contacts__value">ул. Большая Конюшенная, 19/8</p>
             </div>
           </div>
         </div>
-        <div class="contacts__map">
-          <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1586693398857!5m2!1sru!2sru" width="320" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-          <img class="contacts__background" src="img/bg-map-mobile@1x.png" alt="Санкт-Петербург,  ул. Большая Конюшенная, 19/8" width="320" height="200">
-        </div>
+      </section>
+      <section class="map">
+        <h2 class="visually-hidden">Адрес: СПб, ул. Большая Конюшенная, 19/8</h2>
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1586693398857!5m2!1sru!2sru" width="320" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <img class="map__background" src="img/bg-map-mobile@1x.png" alt="Санкт-Петербург,  ул. Большая Конюшенная, 19/8" width="320" height="200">
       </section>
     </main>
   </body>

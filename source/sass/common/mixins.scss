@@ -1,9 +1,9 @@
-@mixin zero-fields  {
-    margin: 0;
-    padding: 0;
+@mixin zero-fields {
+  margin: 0;
+  padding: 0;
 }
 
-@mixin zero-list  {
+@mixin zero-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -13,13 +13,14 @@
   content: "";
   position: absolute;
   width: 100%;
-  height: 40px;
-  bottom: -67px;
-  left: 50%;
-  margin-left: -161px;
+  height: 100%;
+  left: 0;
   background-image: url("../../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  padding-bottom: 27px;
 }
 
+@mixin centralizer($width) {
+  margin: 0 auto;
+  width: $width;
+}

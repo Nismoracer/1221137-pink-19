@@ -2,6 +2,10 @@
   background-color: $bg-download-app-color;
 }
 
+.page-header__container {
+  background-color: $menu-background-color;
+}
+
 .page-header__logo {
   box-sizing: border-box;
   min-height: 68px;
@@ -14,17 +18,17 @@
   cursor: pointer;
   &:hover path {
     fill: $main-red;
-    }
-   &:active path {
+  }
+    &:active path {
     opacity: 0.3;
-    }
+  }
 }
 
 .page-header__menu {
-  margin: 0 auto;
-  width: 320px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   background-color: $menu-background-color;
+  box-shadow: inset -1px 0 $menu-border,
+              inset  1px 0 $menu-border;
 }

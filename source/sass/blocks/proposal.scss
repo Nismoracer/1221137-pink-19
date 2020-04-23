@@ -1,15 +1,13 @@
 .proposal  {
-  width: 320px;
-  margin: 0 auto;
-  min-height: 871px;
-  box-sizing: border-box;
   background-color: $bg-blocks-color;
+  border-bottom: 1px solid white;
 }
 
 .proposal__header  {
   position: relative;
   background-color: $main-layer-color;
-  padding-top: 20px;
+  padding-top: 13px;
+  line-height: 30px;
   &::after  {
     @include bottom-edge;
     }
@@ -20,20 +18,33 @@
   margin-left: auto;
   margin-right: auto;
   width: 205px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 26px;
   text-align: center;
   color: $main-dark-color;
   font-size: 24px;
   font-weight: 300;
+  &:last-child  {
+    padding-bottom: 32px;
+  }
 }
 
 .proposal__list  {
-  @include zero-list;
-  padding-top: 35px;
+  position: relative;
+  list-style: none;
+  padding: 50px 0 318px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  &::after  {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 278px;
+    bottom: 0;
+    left: 0;
+    background: url("../../img/iphone-screen-mobile@1x.png") no-repeat center top;
+    z-index: 2;
+    }
 }
 
 .proposal__item  {
@@ -44,28 +55,16 @@
 .proposal__title  {
   @include zero-fields;
   font-size: 18px;
-  padding-top: 20px;
+  padding-top: 31px;
   line-height: 24px;
   font-weight: 700;
 }
 
 .proposal__description  {
   @include zero-fields;
-  padding-top: 8px;
+  padding-top: 12px;
   font-size: 14px;
   line-height: 24px;
   color: $main-dark-color;
 }
 
-.proposal__item--make-friends  {
-  position: relative;
-  &::after  {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 282px;
-  top: 150px;
-  left: 0;
-  background: url("../../img/iphone-screen-mobile@1x.png") no-repeat center top;
-  }
-}
