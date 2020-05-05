@@ -5,27 +5,33 @@ img {
 
 body {
   min-width: 320px;
+
   @include zero-fields;
-  font-family: "Open Sans", Lucida Grande, sans-serif;
+  font-family: "Open Sans", "Lucida Grande", sans-serif;
   font-size: $main-font-size;
   line-height: $main-line-height;
   font-weight: $main-font-weight;
   color: $text-color;
 }
 
+.hide {
+  display: none;
+}
+
 .container {
   @include centralizer(320px);
+  max-width: 1200px;
   overflow: hidden;
 }
 
 @media (min-width: $tablet-width) {
-  .container  {
-  @include centralizer($tablet-width);
+  .container {
+    @include centralizer($tablet-width);
   }
 }
 
 @media (min-width: $desktop-width) {
-  .container  {
-  @include centralizer($desktop-width);
+  .container {
+    @include centralizer($desktop-width);
   }
 }

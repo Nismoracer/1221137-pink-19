@@ -1,21 +1,62 @@
-.top-banner  {
-  height: 173px;
+.top-banner {
+  min-height: 170px;
   background-color: $main-dark-color;
-  border-top: 1px solid transparent;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: top -70px left 0;
+  background-position: top -66px center;
 }
 
-.top-banner__header  {
+.top-banner__header {
   @include zero-fields;
-  width: 225px;
+  width: 230px;
   color: $main-header-color;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 25px;
+  padding-top: 30px;
   text-align: center;
   font-weight: 300;
   font-size: 24px;
   line-height: 28px;
+}
+
+@media (min-width: $tablet-width) {
+  .top-banner {
+    min-height: 330px;
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-position: top -110px center;
+  }
+
+  .top-banner__header {
+    text-align: center;
+    width: 360px;
+    padding-top: 68px;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .top-banner {
+    min-height: 330px;
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-position: top -110px center;
+  }
+
+  .top-banner__header {
+    padding-top: 70px;
+    width: 475px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .top-banner {
+    min-height: 285px;
+    background: transparent;
+  }
+
+  .top-banner__header {
+    padding-top: 65px;
+    width: 750px;
+  }
 }

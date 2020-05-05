@@ -5,9 +5,10 @@
 }
 
 .download-app__container {
+  box-sizing: border-box;
   width: 320px;
   margin: 0 auto;
-  padding-top: 23px;
+  padding: 23px 20px 0 20px;
   background-image: url("../../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: top 109px left;
@@ -15,10 +16,9 @@
 
 .download-app__wrapper {
   margin: 0 auto;
-  width: 285px;
+  width: 280px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -49,9 +49,10 @@
   margin-bottom: 30px;
   display: block;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   box-sizing: border-box;
-  width: 280px;
+  width: 100%;
   height: 55px;
   border: 3px solid #ffffff;
   border-top-left-radius: 10% 50%;
@@ -63,10 +64,12 @@
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
+
   &:hover {
     color: $main-red;
     background-color: #ffffff;
   }
+
   &:active {
     color: #f2bfcc;
     background-color: #ffffff;
@@ -83,4 +86,75 @@
   width: 235px;
   padding-top: 16px;
   padding-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .download-app {
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-position: top -110px center;
+  }
+
+  .download-app__container {
+    box-sizing: border-box;
+    width: $tablet-width;
+    min-height: 618px;
+    background-image: url("../../img/iphone-hand-tablet@1x.png");
+    background-position: top 73px center;
+  }
+
+  .download-app__wrapper {
+    margin: 0;
+    width: 300px;
+  }
+
+  .download-app__slogan-text {
+    min-height: 170px;
+    padding-top: 70px;
+    width: 195px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .download-app__button {
+    margin-bottom: 50px;
+  }
+
+  .download-app__description {
+    padding-top: 25px;
+    font-size: 18px;
+    line-height: 24px;
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download-app {
+    background: transparent;
+  }
+
+  .download-app__container {
+    width: $desktop-width;
+    min-height: 744px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-image: url("../../img/iphone-hand-desktop@1x.png");
+    background-position: bottom left 27px;
+  }
+
+  .download-app__slogan-text {
+    padding-top: 87px;
+    width: 240px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .download-app__button {
+    margin-top: 51px;
+    margin-bottom: 70px;
+    font-size: 21px;
+  }
+
+  .download-app__description {
+    padding-top: 44px;
+  }
 }

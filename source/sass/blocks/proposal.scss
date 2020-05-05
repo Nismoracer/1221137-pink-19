@@ -1,19 +1,21 @@
-.proposal  {
+.proposal {
   background-color: $bg-blocks-color;
 }
 
-.proposal__header  {
+.proposal__header {
   position: relative;
   background-color: $main-layer-color;
+  word-wrap: break-word;
   padding-top: 39px;
   padding-bottom: 10px;
   line-height: 30px;
-  &::after  {
+
+  &::after {
     @include bottom-edge;
-    }
+  }
 }
 
-.proposal__header-text  {
+.proposal__header-text {
   @include zero-fields;
   margin-left: auto;
   margin-right: auto;
@@ -25,31 +27,36 @@
   font-weight: 300;
 }
 
-.proposal__list  {
-  position: relative;
+.proposal__list {
+  box-sizing: border-box;
   list-style: none;
-  padding: 45px 0 318px 0;
+  padding: 27px 0 302px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  &::after  {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 278px;
-    bottom: 0;
-    left: 0;
-    background: url("../../img/iphone-screen-mobile@1x.png") no-repeat center top;
-    z-index: 2;
-    }
 }
 
-.proposal__item  {
+.proposal__item {
   width: 266px;
   text-align: center;
 }
 
-.proposal__title  {
+.proposal__item--make-friends {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 278px;
+    bottom: -318px;
+    left: 0;
+    background: url("../../img/iphone-screen-mobile@1x.png") no-repeat center top;
+    z-index: 2;
+  }
+}
+
+.proposal__title {
   @include zero-fields;
   font-size: 18px;
   padding-top: 31px;
@@ -57,7 +64,7 @@
   font-weight: 700;
 }
 
-.proposal__description  {
+.proposal__description {
   @include zero-fields;
   padding-top: 12px;
   font-size: 14px;
@@ -65,3 +72,158 @@
   color: $main-dark-color;
 }
 
+.proposal__description br {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .proposal__header-text {
+    width: 590px;
+    font-size: 40px;
+    line-height: 48px;
+    padding-bottom: 0;
+  }
+
+  .proposal__header {
+    padding-top: 49px;
+    padding-bottom: 48px;
+
+    &::after {
+      bottom: -47px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-bottom: 47px;
+    }
+  }
+
+  .proposal__description br {
+    display: block;
+  }
+
+  .proposal__item {
+    text-align: left;
+    width: 310px;
+    margin-left: 310px;
+  }
+
+  .proposal__list {
+    padding-top: 23px;
+    padding-bottom: 25px;
+  }
+
+  .proposal__title {
+    padding-top: 34px;
+  }
+
+  .proposal__item--make-friends {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 481px;
+      top: -318px;
+      left: -331px;
+      background: url("../../img/iphone-screen-3-tablet@1x.png") no-repeat center top;
+      z-index: 2;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .proposal__header {
+    padding-top: 67px;
+    padding-bottom: 87px;
+
+    &::after {
+      bottom: -70px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-bottom: 70px;
+    }
+  }
+
+  .proposal__header-text {
+    width: 750px;
+    font-size: 50px;
+    line-height: 60px;
+    padding: 0;
+  }
+
+  .proposal__list {
+    padding-top: 293px;
+    padding-bottom: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .proposal__item {
+    width: 241px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .proposal__title {
+    padding-bottom: 22px;
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .proposal__description {
+    padding: 0;
+    font-size: 18px;
+    line-height: 30px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  .proposal__item--make-funny {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 302px;
+      top: -321px;
+      left: 0;
+      background: url("../../img/iphone-screen-1-desktop@1x.png") no-repeat center top;
+      z-index: 2;
+    }
+  }
+
+  .proposal__item--change-world {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 302px;
+      top: -321px;
+      left: 2px;
+      background: url("../../img/iphone-screen-2-desktop@1x.png") no-repeat center top;
+      z-index: 2;
+    }
+  }
+
+  .proposal__item--make-friends {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 302px;
+      top: -321px;
+      left: 2px;
+      background: url("../../img/iphone-screen-3-desktop@1x.png") no-repeat center top;
+      z-index: 2;
+    }
+  }
+}

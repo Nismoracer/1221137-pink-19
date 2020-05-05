@@ -1,0 +1,60 @@
+.modal {
+  box-sizing: border-box;
+  position: fixed;
+  font: inherit;
+  padding-top: 35px;
+  width: 320px;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -160px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.modal__header {
+  @include zero-fields;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $main-dark-color;
+}
+
+.modal__text {
+  @include zero-fields;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  color: $main-dark-color;
+  padding-bottom: 20px;
+}
+
+.modal__close-button {
+  @include zero-fields;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  width: 280px;
+  height: 64px;
+  background-color: #2aab6d;
+  border-radius: 2px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 24px;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

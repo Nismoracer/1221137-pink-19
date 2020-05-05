@@ -2,8 +2,9 @@
   position: relative;
   background-color: $main-layer-color;
   padding-bottom: 8px;
+
   &::after {
-  @include bottom-edge;
+    @include bottom-edge;
   }
 }
 
@@ -42,7 +43,112 @@
   color: $main-dark-color;
 }
 
-.feedback__wraper {
-  padding-bottom: 20px;
+@media (min-width: $tablet-width) {
+  .feedback {
+    padding-bottom: 3px;
+    &::after {
+      bottom: -48px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-bottom: 48px;
+    }
+  }
+
+  .feedback__wrapper {
+    padding-top: 95px;
+    padding-bottom: 20px;
+  }
+
+  .feedback__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feedback_quote {
+    width: 620px;
+    font-size: 18px;
+    line-height: 30px;
+    order: 0;
+  }
+
+  .feedback__author {
+    order: 1;
+  }
+
+  .feedback__author-name {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 34px;
+    padding-bottom: 5px;
+  }
+
+  .feedback__author-age {
+    @include zero-fields;
+    padding-bottom: 4px;
+    display: block;
+    font-size: 14px;
+  }
 }
 
+@media (min-width: $desktop-width) {
+  .feedback {
+    &::after {
+      bottom: -65px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-bottom: 65px;
+    }
+  }
+
+  .feedback__wrapper {
+    padding-top: 185px;
+    padding-bottom: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 79px;
+      height: 67px;
+      top: 69px;
+      left: 442px;
+      background: url("../../img/icon-quotes.svg") no-repeat center;
+    }
+  }
+
+  .feedback_quote {
+    width: 690px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 23px;
+      height: 44px;
+      top: 27px;
+      right: 127px;
+      background: url("../../img/icon-review-arrow-left.svg") no-repeat center;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 23px;
+      height: 44px;
+      top: 27px;
+      left: 127px;
+      background: url("../../img/icon-review-arrow-right.svg") no-repeat center;
+    }
+  }
+
+  .feedback__author-name {
+    font-size: 24px;
+    padding-top: 36px;
+    padding-bottom: 5px;
+  }
+
+  .feedback__author-age {
+    font-size: 18px;
+  }
+}

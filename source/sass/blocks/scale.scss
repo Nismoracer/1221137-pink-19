@@ -1,0 +1,34 @@
+.scale {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.scale__bar {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+}
+
+.scale__toogle {
+  @include zero-fields;
+  position: absolute;
+  border: none;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #d22856;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  top: -6px;
+
+  &--active {
+    background-color: #d22856;
+  }
+}
+
+.scale__toogle--80 {
+  @include volume(80%);
+}

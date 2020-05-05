@@ -27,3 +27,51 @@
   margin: 0 auto;
   width: $width;
 }
+
+@mixin volume($vol) {
+  left: $vol;
+}
+
+@mixin button-template($width, $color) {
+  display: block;
+  text-align: center;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  box-sizing: border-box;
+  width: $width;
+  height: 55px;
+  border: 3px solid $color;
+  border-top-left-radius: 10% 50%;
+  border-top-right-radius: 10% 50%;
+  border-bottom-left-radius: 10% 50%;
+  border-bottom-right-radius: 10% 50%;
+  background-color: transparent;
+  text-decoration: none;
+  color: $color;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@mixin form-label {
+  @include zero-fields;
+  color: #d22856;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+@mixin form-field {
+  @include zero-fields;
+  border: 2px solid #e7e7e7;
+  height: 58px;
+  padding-left: 25px;
+  font-size: 16px;
+  line-height: 30px;
+
+  &::placeholder {
+    color: $main-dark-color;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

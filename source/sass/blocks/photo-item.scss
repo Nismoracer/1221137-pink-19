@@ -1,63 +1,85 @@
-.photo-item  {
-  display: flex;
-  flex-direction: column;
+.photo-item {
   width: 280px;
-  min-height: 324px;
   margin-bottom: 20px;
 }
 
-.photo-item--top  {
+.photo-item--top {
   position: relative;
   width: 100%;
-  &::before  {
-  position: absolute;
-  content: "Панорама дня";
-  font: inherit;
-  font-size: 12px;
-  line-height: 24px;
-  padding-top: 10px;
-  text-transform: uppercase;
-  text-align: center;
-  width: 140px;
-  height: 36px;
-  color: $main-layer-color;
-  background-color: $main-red;
-  top: 0;
-  right: 20px;
+
+  &::before {
+    position: absolute;
+    content: "Панорама дня";
+    font: inherit;
+    font-size: 12px;
+    line-height: 24px;
+    padding-top: 6px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 140px;
+    height: 27px;
+    color: $main-layer-color;
+    background-color: $main-red;
+    top: 0;
+    right: 20px;
   }
 }
 
-.photo-item__image  {
+.photo-item__image {
+  display: block;
   width: 100%;
   height: auto;
 }
 
-.photo-item__description  {
+.photo-item__description {
   width: 280px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 20px 14px;
+  padding: 18px 10px 20px 18px;
   background-color: $bg-blocks-color;
   color: $main-dark-color;
   font-size: 14px;
   line-height: 24px;
 }
 
-.photo-item__author  {
-  @include zero-fields
+.photo-item__author {
+  @include zero-fields;
   font-weight: 700;
 }
 
-.photo-item__comment-date  {
+.photo-item__comment-date {
   text-transform: uppercase;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
 }
 
-.photo-item__comment  {
+.photo-item__comment {
   @include zero-fields;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
 }
 
 .photo-item__likes,
 .photo-item__likes-counter {
   color: $main-red;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.photo-item__likes {
+  position: relative;
+  padding-left: 31px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 13px;
+    top: 1px;
+    left: 0;
+    background: url("../../img/icon-heart.svg") no-repeat center;
+  }
 }

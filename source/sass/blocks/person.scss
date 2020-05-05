@@ -1,0 +1,65 @@
+.person {
+  @include zero-fields;
+  border: none;
+  order: 0;
+}
+
+.person__list {
+  @include zero-list;
+  padding: 20px 20px 33px 20px;
+}
+
+.person__label {
+  @include form-label;
+  padding-left: 22px;
+  padding-bottom: 5px;
+}
+
+.person__input {
+  @include zero-fields;
+  @include form-field;
+  padding-left: 20px;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active {
+    border-color: #d22856;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    border-color: rgba(229, 229, 229, 0.2);
+  }
+}
+
+.person__item {
+  display: flex;
+  flex-direction: column;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+@media (min-width: $tablet-width) {
+  .person__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 22px;
+    padding-bottom: 30px;
+  }
+
+  .person__list {
+    padding: 49px 0 27px 0;
+  }
+
+  .person__input {
+    flex-grow: 1;
+  }
+
+  .person__label {
+    padding: 0 19px 0 0;
+  }
+}
+
