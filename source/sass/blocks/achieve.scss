@@ -123,3 +123,25 @@
     padding-left: 26px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .achieve {
+    width: 940px;
+    padding-bottom: 40px;
+    margin-bottom: 21px;
+  }
+
+  .achieve__list {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 132px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .achieve__item {
+    box-sizing: border-box;
+    padding-right: 67px;
+    height: 50px;
+  }
+}

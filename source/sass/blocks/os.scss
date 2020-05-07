@@ -125,3 +125,20 @@
     padding-left: 27px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .os {
+    width: 434px;
+    margin-top: 66px;
+    margin-left: 36px;
+    margin-bottom: 10px;
+    padding-bottom: 25px;
+    order: 1;
+  }
+
+  .os__list {
+    padding-top: 17px;
+    padding-left: 64px;
+    height: 180px;
+  }
+}

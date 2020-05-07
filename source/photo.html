@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="">
@@ -46,91 +47,156 @@
         </div>
       </nav>
       <section class="top-banner">
-        <h1 class="top-banner__header">Фотографии<br>пользователей</h1>
+        <h2 class="top-banner__header">Фотографии<br>пользователей</h2>
       </section>
     </header>
     <main class="page-photos">
+      <div class="intro  container">
+        <p class="intro__photo-text">Взгляните на фотографии, которые выкладывают пользователи! <br>Видите, как не хватает ваших?</p>
+      </div>
+      <section class="top-photo">
+        <h2 class="visually-hidden">Панорама дня.</h2>
+        <a class="top-photo__link" href="">
+          <img class="top-photo__image" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото дня">
+        </a>
+        <div class="top-photo__description">
+          <div class="top-photo__autho-wrapper">
+            <b class="top-photo__author">Анна</b>
+            <time class="top-photo__comment-date" datetime="2020-03-28">(5 минут назад)</time>
+          </div>
+          <p class="top-photo__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе,
+          задавайте свои вопросы!</p>
+          <div class="likes">
+            <button class="likes__button" type="button" aria-label="Поставить лайк"></button>
+            <div class="likes_text-wrapper">
+              <span class="likes__text">Нравится: </span>
+              <span class="likes__counter">215</span>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="photos-review  container">
-        <h2 class="visually-hidden">Список фотографий пользователей приложения.</h2>
-        <p class="photos-review__intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <h1 class="visually-hidden">Фотографии пользователей приложения.</h1>
         <ul class="photos-review__list">
-          <li class="photo-item  photo-item--top">
-            <img class="photo-item__image  photo-item__image--top" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото дня">
-            <div class="photo-item__description">
-              <b class="photo-item__author">Анна</b>
-              <time class="photo-item__comment-date" datetime="2020-03-28">(5 минут назад)</time>
-              <p class="photo-item__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе,
-              задавайте свои вопросы!</p>
-              <span class="photo-item__likes">Нравится: </span>
-              <span class="photo-item__likes-counter">215</span>
-            </div>
-          </li>
           <li class="photo-item">
-            <img class="photo-item__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Автообзор">
+            <a class="photo-item__link" href="">
+              <img class="photo-item__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Автообзор">
+            </a>
             <div class="photo-item__description">
-              <b class="photo-item__author">Левон</b>
-              <time class="photo-item__comment-date" datetime="2020-03-28">(5 часов назад)</time>
+              <div class="photo-item__author-wrapper">
+                <b class="photo-item__author">Левон</b>
+                <time class="photo-item__comment-date" datetime="2020-03-28">(5 часов назад)</time>
+              </div>
               <p class="photo-item__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <span class="photo-item__likes">Нравится: </span>
-              <span class="photo-item__likes-counter">356</span>
+              <div class="likes">
+                <button class="likes__button" type="button" aria-label="Поставить лайк"></button>
+                <div class="likes_text-wrapper">
+                  <span class="likes__text">Нравится: </span>
+                  <span class="likes__counter">356</span>
+                </div>
+              </div>
             </div>
           </li>
           <li class="photo-item">
-            <img class="photo-item__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Барабанная установка">
+            <a class="photo-item__link" href="">
+               <img class="photo-item__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Барабанная установка">
+            </a>
             <div class="photo-item__description">
-              <b class="photo-item__author">Антон</b>
-              <time class="photo-item__comment-date" datetime="2020-03-28">(12 часов назад)</time>
+              <div class="photo-item__author-wrapper">
+                <b class="photo-item__author">Антон</b>
+                <time class="photo-item__comment-date" datetime="2020-03-28">(12 часов назад)</time>
+              </div>
               <p class="photo-item__comment">Соседи будут рады!</p>
-              <span class="photo-item__likes">Нравится: </span>
-              <span class="photo-item__likes-counter">666</span>
+              <div class="likes">
+                <button class="likes__button" type="button" aria-label="Поставить лайк"></button>
+                <div class="likes_text-wrapper">
+                  <span class="likes__text">Нравится: </span>
+                  <span class="likes__counter">666</span>
+                </div>
             </div>
           </li>
           <li class="photo-item">
-            <img class="photo-item__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Стеклянная крыша">
+            <a class="photo-item__link" href="">
+              <img class="photo-item__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Стеклянная крыша">
+            </a>
             <div class="photo-item__description">
-              <b class="photo-item__author">Борис</b>
-              <time class="photo-item__comment-date" datetime="2020-03-28">(20 часов назад)</time>
-              <p class="photo-item__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <span class="photo-item__likes">Нравится: </span>
-              <span class="photo-item__likes-counter">215</span>
+                <div class="photo-item__author-wrapper">
+                  <b class="photo-item__author">Борис</b>
+                  <time class="photo-item__comment-date" datetime="2020-03-28">(20 часов назад)</time>
+                </div>
+                <p class="photo-item__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <div class="likes">
+                  <button class="likes__button" type="button" aria-label="Поставить лайк"></button>
+                  <div class="likes_text-wrapper">
+                    <span class="likes__text">Нравится: </span>
+                    <span class="likes__counter">215</span>
+                  </div>
+                </div>
             </div>
           </li>
           <li class="photo-item">
-            <img class="photo-item__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Кубанская бахча">
+            <a class="photo-item__link" href="">
+              <img class="photo-item__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Кубанская бахча">
+            </a>
             <div class="photo-item__description">
-              <b class="photo-item__author">Сергей</b>
-              <time class="photo-item__comment-date" datetime="2020-03-28">(25 часов назад)</time>
+              <div class="photo-item__author-wrapper">
+                <b class="photo-item__author">Сергей</b>
+                <time class="photo-item__comment-date" datetime="2020-03-27">(25 часов назад)</time>
+              </div>
               <p class="photo-item__comment">Самая кубанская в мире!</p>
-              <span class="photo-item__likes">Нравится: </span>
-              <span class="photo-item__likes-counter">4</span>
+              <div class="likes">
+                <button class="likes__button" type="button" aria-label="Поставить лайк"></button>
+                <div class="likes_text-wrapper">
+                  <span class="likes__text">Нравится: </span>
+                  <span class="likes__counter">4</span>
+                </div>
+              </div>
             </div>
           </li>
           <li class="photo-item">
-            <img class="photo-item__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Весна">
+            <a class="photo-item__link" href="">
+              <img class="photo-item__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Весна">
+            </a>
             <div class="photo-item__description">
-              <b class="photo-item__author">Максим</b>
-              <time class="photo-item__comment-date" datetime="2020-03-28">(40 часов назад)</time>
+              <div class="photo-item__author-wrapper">
+                <b class="photo-item__author">Максим</b>
+                <time class="photo-item__comment-date" datetime="2020-03-27">(40 часов назад)</time>
+              </div>
               <p class="photo-item__comment">Где снег то?</p>
-              <span class="photo-item__likes">Нравится: </span>
-              <span class="photo-item__likes-counter">150</span>
+              <div class="likes">
+                <button class="likes__button" type="button" aria-label="Поставить лайк"></button>
+                <div class="likes_text-wrapper">
+                  <span class="likes__text">Нравится: </span>
+                  <span class="likes__counter">150</span>
+                </div>
+              </div>
             </div>
           </li>
           <li class="photo-item">
-            <img class="photo-item__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="В небе">
+            <a class="photo-item__link" href="">
+              <img class="photo-item__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="В небе">
+            </a>
             <div class="photo-item__description">
-              <b class="photo-item__author">Надежда</b>
-              <time class="photo-item__comment-date" datetime="2020-03-28">(45 часов назад)</time>
+              <div class="photo-item__author-wrapper">
+                <b class="photo-item__author">Надежда</b>
+                <time class="photo-item__comment-date" datetime="2020-03-27">(45 часов назад)</time>
+              </div>
               <p class="photo-item__comment">Всем GM и взаимные лайки!</p>
-              <span class="photo-item__likes">Нравится: </span>
-              <span class="photo-item__likes-counter">2560</span>
+              <div class="likes">
+                <button class="likes__button" type="button" aria-label="Поставить лайк"></button>
+                <div class="likes_text-wrapper">
+                  <span class="likes__text">Нравится: </span>
+                  <span class="likes__counter">2560</span>
+                </div>
+              </div>
             </div>
           </li>
         </ul>
-        <div class="photos-review__outro">
-          <p class="photos-review__outro-header">Затмите их всех!</p>
-          <p class="photos-review__outro-text">Выкладывайте все, что накопилось в телефоне!</p>
-        </div>
       </section>
+      <div class="outro-photo  container">
+        <p class="outro-photo__header">Затмите их всех!</p>
+        <p class="outro-photo__text">Выкладывайте все, что накопилось в телефоне!</p>
+      </div>
       <section class="upload-photo  container">
         <h2 class="visually-hidden">Здесь можно добавить ваше фото на сайт.</h2>
         <form class="upload-photo__form" action="https://echo.htmlacademy.ru" method="get">

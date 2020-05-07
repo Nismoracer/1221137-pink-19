@@ -1,12 +1,13 @@
 .person {
   @include zero-fields;
+  box-sizing: border-box;
   border: none;
   order: 0;
 }
 
 .person__list {
   @include zero-list;
-  padding: 20px 20px 33px 20px;
+  padding: 5px 20px 33px 20px;
 }
 
 .person__label {
@@ -60,6 +61,24 @@
 
   .person__label {
     padding: 0 19px 0 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .person {
+    width: 470px;
+    padding-top: 8px;
+    padding-right: 34px;
+    order: 0;
+  }
+
+  .person__list {
+    padding-bottom: 10px;
+  }
+
+  .person__item {
+    padding-top: 27px;
+    padding-bottom: 27px;
   }
 }
 

@@ -2,39 +2,6 @@
   background-color: $main-layer-color;
 }
 
-.photos-review__intro {
-  @include zero-fields;
-  min-height: 184px;
-  width: 245px;
-  box-sizing: border-box;
-  text-align: center;
-  margin: 0 auto;
-  padding-top: 45px;
-  padding-bottom: 47px;
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 500;
-  color: $main-dark-color;
-}
-
-.photos-review__outro {
-  padding-top: 23px;
-  padding-bottom: 42px;
-}
-
-.photos-review__outro-text,
-.photos-review__outro-header {
-  @include zero-fields;
-  margin: 0 auto;
-  box-sizing: border-box;
-  width: 260px;
-  text-align: center;
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 500;
-  color: $main-dark-color;
-}
-
 .photos-review__list {
   @include zero-fields;
   list-style: none;

@@ -1,0 +1,36 @@
+.likes {
+  display: flex;
+}
+
+.likes__button {
+  @include zero-fields;
+  margin-right: 18px;
+  width: 13px;
+  height: 13px;
+  display: block;
+  border: none;
+  cursor: pointer;
+  background: url("../../img/icon-heart.svg") no-repeat center;
+}
+
+.likes_text-wrapper {
+  color: $main-red;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+}
+
+@media (min-width: $tablet-width) {
+  .likes {
+    width: 120px;
+    margin-top: 6px;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    order: 1;
+  }
+
+  .likes__button {
+    margin: 0;
+  }
+}
