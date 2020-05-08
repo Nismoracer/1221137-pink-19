@@ -53,8 +53,8 @@
 
 
 .modal__close-button {
-  font: inherit;
   @include zero-fields;
+  font: inherit;
   display: block;
   margin: 0 auto;
   border: none;
