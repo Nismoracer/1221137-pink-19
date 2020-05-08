@@ -47,6 +47,7 @@
 .top-photo__author {
   @include zero-fields;
   font-weight: 700;
+  word-wrap: break-word;
 }
 
 .top-photo__comment-date {
@@ -59,6 +60,7 @@
 .top-photo__comment {
   @include zero-fields;
   padding-bottom: 15px;
+  word-wrap: break-word;
 }
 
 @media (min-width: $tablet-width) {
@@ -80,5 +82,20 @@
 
   .top-photo__comment {
     order: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .top-photo {
+    margin-bottom: 50px;
+
+    &::before {
+      top: 54px;
+      right: 160px;
+    }
+  }
+
+  .top-photo__description {
+    width: 940px;
   }
 }

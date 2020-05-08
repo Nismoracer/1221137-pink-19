@@ -25,6 +25,7 @@
 
 .photo-item__author {
   @include zero-fields;
+  word-wrap: break-word;
   font-weight: 700;
 }
 
@@ -38,5 +39,47 @@
 .photo-item__comment {
   @include zero-fields;
   padding-bottom: 14px;
+  word-wrap: break-word;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-item {
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 55px;
+  }
+
+  .photo-item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .photo-item__description {
+    min-height: 155px;
+    padding-top: 24px;
+    padding-left: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .photo-item__comment {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-item {
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 55px;
+  }
+
+  .photo-item:nth-child(2n) {
+    margin-right: 20px;
+  }
+
+  .photo-item:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 

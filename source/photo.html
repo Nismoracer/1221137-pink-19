@@ -47,12 +47,12 @@
         </div>
       </nav>
       <section class="top-banner">
-        <h2 class="top-banner__header">Фотографии<br>пользователей</h2>
+        <h2 class="top-banner__header  top-banner__header--photo">Фотографии пользователей</h2>
       </section>
     </header>
     <main class="page-photos">
       <div class="intro  container">
-        <p class="intro__photo-text">Взгляните на фотографии, которые выкладывают пользователи! <br>Видите, как не хватает ваших?</p>
+        <p class="intro__photo-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </div>
       <section class="top-photo">
         <h2 class="visually-hidden">Панорама дня.</h2>
@@ -60,13 +60,13 @@
           <img class="top-photo__image" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото дня">
         </a>
         <div class="top-photo__description">
-          <div class="top-photo__autho-wrapper">
+          <div class="top-photo__author-wrapper">
             <b class="top-photo__author">Анна</b>
             <time class="top-photo__comment-date" datetime="2020-03-28">(5 минут назад)</time>
           </div>
           <p class="top-photo__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе,
           задавайте свои вопросы!</p>
-          <div class="likes">
+          <div class="likes likes--top-photo">
             <button class="likes__button" type="button" aria-label="Поставить лайк"></button>
             <div class="likes_text-wrapper">
               <span class="likes__text">Нравится: </span>
@@ -225,7 +225,7 @@
                 </div>
                 <div class="upload-photo__modes-item">
                   <button class="upload-photo__brightness-button" type="button" aria-label="Яркость">
-                    <svg class="upload-photo__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                    <svg class="upload-photo__icon--brightness" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
                       <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
                       <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
                     </svg>
@@ -233,19 +233,19 @@
                 </div>
               </div>
               <div class="upload-photo__bars">
-                <div class="upload-photo__size-bar  scale">
+                <div class="upload-photo__size-bar">
                   <div class="scale__bar">
-                      <button class="scale__toogle  scale__toogle--80" type="button"></button>
+                      <button class="scale__toogle  scale__toogle--size" type="button" aria-label="Масштаб"></button>
                   </div>
                 </div>
-                <div class="upload-photo__contrast-bar  scale">
-                  <div class="scale__bar  hide">
-                      <button class="scale__toogle  scale__toogle--80" type="button"></button>
+                <div class="upload-photo__contrast-bar">
+                  <div class="scale__bar">
+                      <button class="scale__toogle  scale__toogle--contrast" type="button" aria-label="Контраст"></button>
                   </div>
                 </div>
-                <div class="pload-photo__brightness-bar  scale">
+                <div class="upload-photo__brightness-bar">
                   <div class="scale__bar">
-                      <button class="scale__toogle  scale__toogle--80" type="button"></button>
+                      <button class="scale__toogle  scale__toogle--brightness" type="button" aria-label="Яркость"></button>
                   </div>
                 </div>
               </div>

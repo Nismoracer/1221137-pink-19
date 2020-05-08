@@ -3,6 +3,10 @@
   padding: 91px 0 47px 0;
 }
 
+.tariffs__wrapper {
+  overflow: hidden;
+}
+
 @media (min-width: $tablet-width) {
   .tariffs {
     padding-top: 86px;

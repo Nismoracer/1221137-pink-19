@@ -15,3 +15,17 @@
   font-weight: 500;
   color: $main-dark-color;
 }
+
+@media (min-width: $tablet-width) {
+  .outro-photo {
+    padding-top: 10px;
+    padding-bottom: 68px;
+  }
+
+  .outro-photo__header,
+  .outro-photo__text {
+    font-size: 18px;
+    line-height: 30px;
+    width: 425px;
+  }
+}

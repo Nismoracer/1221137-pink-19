@@ -20,10 +20,6 @@
   padding-bottom: 46px;
 }
 
-.intro__photo-text br {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
   .intro {
     margin-bottom: 0;
@@ -54,5 +50,10 @@
 
   .intro--tablet {
     width: 340px;
+  }
+
+  .intro__photo-text {
+    width: 580px;
+    padding-bottom: 88px;
   }
 }

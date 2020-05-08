@@ -24,6 +24,7 @@
 
   .promo__header {
     @include zero-fields;
+    width: 175px;
     font-size: 30px;
     line-height: 36px;
     padding-bottom: 10px;
@@ -70,11 +71,8 @@
   }
 
   .promo__header {
+    width: 300px;
     padding-bottom: 21px;
-
-    & br {
-      display: none;
-    }
   }
 
   .promo__description {

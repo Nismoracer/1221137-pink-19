@@ -10,7 +10,7 @@
   display: block;
   border: none;
   cursor: pointer;
-  background: url("../../img/icon-heart.svg") no-repeat center;
+  background: url("../img/icon-heart.svg") no-repeat center;
 }
 
 .likes_text-wrapper {
@@ -23,7 +23,7 @@
 
 @media (min-width: $tablet-width) {
   .likes {
-    width: 120px;
+    width: 240px;
     margin-top: 6px;
     justify-content: space-between;
     flex-direction: row-reverse;
@@ -34,3 +34,10 @@
     margin: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .likes--top-photo {
+    width: 120px;
+  }
+}
+

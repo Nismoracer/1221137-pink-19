@@ -2,10 +2,14 @@
   position: relative;
   background-color: $main-layer-color;
   padding-bottom: 8px;
+}
 
-  &::after {
-    @include bottom-edge;
-  }
+.feedback__bottom-edge {
+  position: absolute;
+  width: 100%;
+  height: 25px;
+  bottom: -25px;
+  left: 0;
 }
 
 .feedback__wrapper {
@@ -46,12 +50,12 @@
 @media (min-width: $tablet-width) {
   .feedback {
     padding-bottom: 3px;
-    &::after {
-      bottom: -48px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      padding-bottom: 48px;
-    }
+  }
+
+  .feedback__bottom-edge {
+    width: 100%;
+    height: 47px;
+    bottom: -47px;
   }
 
   .feedback__wrapper {
@@ -92,13 +96,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  .feedback {
-    &::after {
-      bottom: -65px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      padding-bottom: 65px;
-    }
+  .feedback__bottom-edge {
+    width: 100%;
+    height: 70px;
+    bottom: -70px;
   }
 
   .feedback__wrapper {
@@ -113,7 +114,7 @@
       height: 67px;
       top: 69px;
       left: 442px;
-      background: url("../../img/icon-quotes.svg") no-repeat center;
+      background: url("../img/icon-quotes.svg") no-repeat center;
     }
   }
 
@@ -128,7 +129,7 @@
       height: 44px;
       top: 27px;
       right: 127px;
-      background: url("../../img/icon-review-arrow-left.svg") no-repeat center;
+      background: url("../img/icon-review-arrow-left.svg") no-repeat center;
     }
 
     &::after {
@@ -138,7 +139,7 @@
       height: 44px;
       top: 27px;
       left: 127px;
-      background: url("../../img/icon-review-arrow-right.svg") no-repeat center;
+      background: url("../img/icon-review-arrow-right.svg") no-repeat center;
     }
   }
 
