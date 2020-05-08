@@ -2,14 +2,14 @@
   display: table;
   margin: 0 auto;
   width: 580px;
-  border-collapse: collapse;
+  background-color: #ffffff;
   margin-bottom: 40px;
+  border-collapse: collapse;
 }
 
 .table__cell {
   display: table-cell;
   box-sizing: border-box;
-  background-color: #ffffff;
   border: 2px solid #e5e5e5;
   width: 280px;
   height: 60px;
@@ -21,10 +21,9 @@
 }
 
 .table__cell--transparent {
-  background-color: transparent;
-  border-top-color: transparent;
-  border-left-color: transparent;
-  border-right-color: transparent;
+  background-color: $bg-blocks-color;
+  border: 2px solid $bg-blocks-color;
+  border-bottom-color: #e5e5e5;
 }
 
 .table__cell--top {

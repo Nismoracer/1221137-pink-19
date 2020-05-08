@@ -14,22 +14,21 @@
   flex-wrap: wrap;
 }
 
-.contest__button-label {
+.contest__button-label--desktop {
   display: none;
-  font-size: 14px;
 }
 
-.contest__button-label-mobile {
+.contest__button-label {
   margin: 0 auto;
   padding-top: 37px;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+}
 
-  & sup {
-    color: $main-red;
-    font-size: 14px;
-  }
+.contest__button-label sup {
+  color: $main-red;
+  font-size: 14px;
 }
 
 .contest__button {
@@ -71,7 +70,7 @@
     align-items: center;
   }
 
-  .contest__button-label-mobile {
+  .contest__button-label {
     padding: 0;
     margin: 0;
     display: flex;
@@ -107,20 +106,9 @@
     align-items: center;
   }
 
-  .contest__button-label-mobile {
-    display: none;
-  }
-
-  .contest__button-label {
+  .contest__button-label--desktop {
     display: block;
-    font-size: 14px;
-    line-height: 24px;
-    text-transform: uppercase;
-    letter-spacing: 0.4px;
-
-    & sup {
-      color: $main-red;
-      font-size: 14px;
-    }
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
