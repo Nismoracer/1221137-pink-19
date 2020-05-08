@@ -138,9 +138,9 @@
 @media (min-width: $desktop-width) {
   .page-header__menu {
     @include zero-fields;
-    margin: 0;
     background: none;
     box-shadow: none;
+    margin: 0;
     width: 320px;
     padding-top: 45px;
   }
