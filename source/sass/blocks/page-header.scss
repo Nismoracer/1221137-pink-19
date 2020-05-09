@@ -121,6 +121,8 @@
   .page-header__menu--closed {
     box-shadow: inset 0 106px  rgba(0, 0, 0, 0.3);
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: top -4px center;
+    background-repeat: no-repeat;
   }
 }
 
@@ -148,6 +150,11 @@
   .page-header {
     min-height: 393px;
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat top center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/bg-back-desktop@2x.jpg") no-repeat top center;
+      background-size: 5120px auto;
+    }
   }
 
   .page-header--main {
