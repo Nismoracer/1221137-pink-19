@@ -3,7 +3,7 @@
 }
 
 .page-header__toggle {
-  width: 50px;
+  width: 52px;
   height: 27px;
   display: block;
   position: relative;
@@ -42,8 +42,8 @@
   &::before {
     position: absolute;
     content: "";
-    top: 0;
-    left: 25px;
+    top: -2px;
+    left: 37px;
     width: 5px;
     height: 29px;
     background-color: #ffffff;
@@ -53,8 +53,8 @@
   &::after {
     position: absolute;
     content: "";
-    top: 0;
-    left: 25px;
+    top: -2px;
+    left: 37px;
     width: 5px;
     height: 29px;
     background-color: #ffffff;

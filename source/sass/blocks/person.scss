@@ -64,11 +64,6 @@
   }
 }
 
-.person__input::-moz-placeholder {
-  line-height: 3;
-  color: #283645;
-}
-
 @media (min-width: $desktop-width) {
   .person {
     width: 470px;
