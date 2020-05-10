@@ -1,0 +1,144 @@
+.os {
+  @include zero-fields;
+  box-sizing: border-box;
+  border: none;
+  background-color: $bg-blocks-color;
+  padding: 30px 20px 24px 20px;
+  order: 3;
+}
+
+.os__legend {
+  display: none;
+}
+
+.os__header {
+  @include zero-fields;
+  @include form-label;
+  width: 180px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 18px;
+  padding-top: 10px;
+  padding-bottom: 16px;
+}
+
+.os__list {
+  @include zero-list;
+  height: 224px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.os__label {
+  position: relative;
+  padding-left: 37px;
+  font-size: 18px;
+  line-height: 30px;
+  color: $main-dark-color;
+  cursor: pointer;
+  user-select: none;
+}
+
+.os__input + .os__label::before {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 35px;
+  top: -7px;
+  left: -33px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.os__input:checked + .os__label::after {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  top: 4px;
+  left: -21px;
+  background-color: #d22856;
+  border: 1px solid #d22856;
+  border-radius: 50%;
+}
+
+.os__input:disabled + .os__label {
+  pointer-events: none;
+  border-color: rgba(229, 229, 229, 0.1);
+  color: rgba(40, 54, 69, 0.1);
+}
+
+.os__label:hover {
+  &::before {
+    border-color: #293746;
+  }
+}
+
+.os__input:active + .os__label {
+  &::before {
+    border-color: #d22856;
+  }
+}
+
+.os__input:focus + .os__label {
+  &::before {
+    border-color: #d22856;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .os {
+    order: 1;
+    background-color: transparent;
+    border: 2px solid $bg-blocks-color;
+    margin-bottom: 34px;
+  }
+
+  .os__list {
+    padding-top: 15px;
+    padding-left: 48px;
+    padding-bottom: 35px;
+    height: 180px;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .os__header {
+    display: none;
+  }
+
+  .os__legend {
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 24px;
+    font-size: 14px;
+    color: $main-red;
+  }
+
+  .os__label {
+    padding-left: 27px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .os {
+    width: 434px;
+    margin-top: 66px;
+    margin-left: 36px;
+    margin-bottom: 10px;
+    padding-bottom: 25px;
+    order: 1;
+  }
+
+  .os__list {
+    padding-top: 17px;
+    padding-left: 64px;
+    height: 180px;
+  }
+}

@@ -1,0 +1,71 @@
+.stopwatch {
+  width: 281px;
+  height: auto;
+  padding-top: 117px;
+  padding-left: 19px;
+}
+
+.stopwatch__text {
+  margin: 0;
+  position: relative;
+  text-align: center;
+  color: #d22856;
+  padding-top: 84px;
+  font-size: 95px;
+  font-weight: 700;
+  width: 203px;
+  height: 140px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 275px;
+    height: 275px;
+    top: -55px;
+    left: -37px;
+    background: url("../img/icon-timer.svg") no-repeat center;
+    background-size: contain;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    top: 0;
+    left: 0;
+    border: 14px solid #d22856;
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .stopwatch {
+    width: 332px;
+    padding-top: 117px;
+    padding-left: 15px;
+  }
+
+  .stopwatch__text {
+    padding-top: 108px;
+    font-size: 118px;
+    width: 250px;
+    height: 200px;
+
+    &::before {
+      width: 345px;
+      height: 345px;
+      top: -69px;
+      left: -47px;
+      background-size: contain;
+    }
+
+    &::after {
+      width: 222px;
+      height: 222px;
+      top: 0;
+      left: -1px;
+      border: 16px solid #d22856;
+    }
+  }
+}

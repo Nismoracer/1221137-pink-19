@@ -1,0 +1,33 @@
+.toogles {
+  margin: 0 auto;
+  width: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toogles__button {
+  @include zero-fields;
+  cursor: pointer;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: rgba(126, 134, 143, 0.3);
+
+  &:hover {
+    background-color: rgba(126, 134, 143, 0.6);
+  }
+
+  &:active {
+    background-color: rgba(126, 134, 143, 0.1);
+  }
+}
+
+.toogles__button--active {
+  background-color: #ffffff;
+  pointer-events: none;
+  width: 12px;
+  height: 12px;
+  border: 3px solid #283645;
+}

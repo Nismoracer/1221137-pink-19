@@ -1,27 +1,31 @@
-.photos-review  {
+.photos-review {
   background-color: $main-layer-color;
-}
-
-.photos-review__intro,
-.photos-review__outro  {
-  @include zero-fields
-  min-height: 184px;
-  width: 245px;
   box-sizing: border-box;
-  text-align: center;
-  margin: 0 auto;
-  padding-top: 47px;
-  padding-bottom: 47px;
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 500;
-  color: $main-dark-color;
 }
 
-.photos-review__list  {
+.photos-review__list {
   @include zero-fields;
   list-style: none;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .photos-review {
+    padding: 0 20px;
+  }
+
+  .photos-review__list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photos-review {
+    padding: 0 10px;
+  }
 }

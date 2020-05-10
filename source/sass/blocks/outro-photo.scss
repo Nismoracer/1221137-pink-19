@@ -1,0 +1,31 @@
+.outro-photo {
+  padding-top: 23px;
+  padding-bottom: 42px;
+}
+
+.outro-photo__header,
+.outro-photo__text {
+  @include zero-fields;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 260px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 500;
+  color: $main-dark-color;
+}
+
+@media (min-width: $tablet-width) {
+  .outro-photo {
+    padding-top: 10px;
+    padding-bottom: 68px;
+  }
+
+  .outro-photo__header,
+  .outro-photo__text {
+    font-size: 18px;
+    line-height: 30px;
+    width: 425px;
+  }
+}

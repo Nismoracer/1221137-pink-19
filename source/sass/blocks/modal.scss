@@ -1,0 +1,153 @@
+.modal {
+  box-sizing: border-box;
+  position: fixed;
+  font: inherit;
+  padding-top: 35px;
+  width: 320px;
+  top: 50%;
+  left: 50%;
+  margin-top: -145px;
+  margin-left: -160px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.modal__header {
+  @include zero-fields;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $main-dark-color;
+}
+
+.modal__text {
+  @include zero-fields;
+  text-align: center;
+  margin: 0 auto;
+  width: 274px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  color: $main-dark-color;
+  padding-bottom: 20px;
+}
+
+.modal__text--error {
+  padding-bottom: 0;
+}
+
+.modal__wrapper--submitted {
+  background-color: #f2f2f2;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.modal__wrapper--error {
+  background-color: #ffffff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+.modal__close-button {
+  @include zero-fields;
+  font: inherit;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  width: 280px;
+  height: 64px;
+  background-color: #2aab6d;
+  border-radius: 2px;
+  color: #ffffff;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 30px;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 465px;
+    margin-top: -182px;
+    margin-left: -232px;
+  }
+
+  .modal br {
+    display: none;
+  }
+
+  .modal__header {
+    width: 225px;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+
+  .modal__text {
+    width: 310px;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 0;
+  }
+
+  .modal__text--submitted {
+    padding-bottom: 30px;
+  }
+
+  .modal__close-button {
+    width: 300px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .modal {
+    width: 780px;
+    margin-top: -188px;
+    margin-left: -390px;
+  }
+
+  .modal__header {
+    width: 400px;
+  }
+
+  .modal__text--submitted {
+    width: 385px;
+    padding-bottom: 40px;
+  }
+
+  .modal__text--error {
+    width: 360px;
+    padding-bottom: 40px;
+  }
+
+  .modal__close-button {
+    width: 460px;
+  }
+
+  .modal__wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .modal__wrapper--error {
+    background-color: #f2f2f2;
+  }
+
+  .modal__close-button--error {
+    width: 300px;
+  }
+}

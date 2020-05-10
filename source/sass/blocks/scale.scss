@@ -1,0 +1,35 @@
+.scale__bar {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+}
+
+.scale__toogle {
+  @include zero-fields;
+  position: absolute;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #d22856;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  top: -6px;
+
+  &--active {
+    background-color: #d22856;
+  }
+}
+
+.scale__toogle--brightness {
+  left: 80%;
+}
+
+@media (min-width: $tablet-width) {
+  .scale {
+    box-sizing: border-box;
+    height: 70px;
+    padding-top: 33px;
+    border-bottom: 1px solid #dddfe0;
+  }
+}

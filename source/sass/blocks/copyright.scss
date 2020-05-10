@@ -1,10 +1,36 @@
-.copyright  {
+.copyright {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.copyright__name  {
+.copyright__name {
+  text-align: left;
+  width: 95px;
+  padding-left: 5px;
+  padding-bottom: 9px;
+  display: block;
   color: #283645;
   font-size: 14px;
   line-height: 18px;
+}
+
+.copyright__link-image {
+  width: 41px;
+  height: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__name {
+    margin-top: 8px;
+    width: 117px;
+    font-size: 18px;
+    align-self: flex-start;
+  }
 }

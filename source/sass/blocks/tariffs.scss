@@ -1,0 +1,22 @@
+.tariffs {
+  background-color: $bg-blocks-color;
+  padding: 91px 0 47px 0;
+}
+
+.tariffs__wrapper {
+  overflow: hidden;
+}
+
+@media (min-width: $tablet-width) {
+  .tariffs {
+    padding-top: 86px;
+    padding-bottom: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tariffs {
+    padding-top: 139px;
+    padding-bottom: 42px;
+  }
+}

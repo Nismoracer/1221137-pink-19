@@ -1,39 +1,65 @@
-.social  {
+.social {
   @include zero-fields;
   list-style: none;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 130px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 36px;
+  padding-bottom: 26px;
   flex-wrap: wrap;
   margin: 0 auto;
-  width: 180px;
+  width: 176px;
 }
 
-.social__link  {
+.social__item {
+  padding-right: 13px;
+  padding-bottom: 10px;
+
+  &:nth-child(3n) {
+    padding-right: 0;
+  }
+}
+
+.social__link {
   display: block;
   width: 50px;
   height: 50px;
   box-sizing: border-box;
   border: 2px solid #e9ebec;
   border-radius: 50%;
-  &:hover  {
-  border-color: #000000;
+
+  &:hover {
+    border-color: #000000;
   }
-  &:active  {
+
+  &:active {
     border-color: #000000;
     opacity: 0.3;
-    }
+  }
 }
 
-.social__link--tw  {
-  background: url("../../img/icon-twitter.svg") no-repeat center;
+.social__link--tw {
+  background: url("../img/icon-twitter.svg") no-repeat center;
 }
 
-.social__link--fb  {
-  background: url("../../img/icon-facebook.svg") no-repeat center;
+.social__link--fb {
+  background: url("../img/icon-facebook.svg") no-repeat center;
 }
 
-.social__link--ytube  {
-  background: url("../../img/icon-youtube.svg") no-repeat center;
+.social__link--ytube {
+  background: url("../img/icon-youtube.svg") no-repeat center;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    padding-top: 9px;
+    padding-bottom: 0;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    padding-left: 25px;
+  }
 }

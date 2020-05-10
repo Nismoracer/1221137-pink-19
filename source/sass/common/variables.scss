@@ -1,10 +1,13 @@
-$tablet-resolution: 660px;
-$desktop-resolution: 960px;
+$tablet-width: 660px;
+$desktop-width: 960px;
+$no-desktop-width: 959px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
 $main-font-size: 16px;
 $main-line-height: 24px;
 $main-font-weight: 500;
 
 /* menu */
-$menu-font-size: 16px;
+$menu-font-size: 18px;
 $menu-line-height: 32px;
 $menu-font-weight: 700;
