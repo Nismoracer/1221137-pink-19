@@ -48,6 +48,11 @@
   }
 }
 
+.form-contacts__input::-moz-placeholder {
+  line-height: 3;
+  color: #283645;
+}
+
 .form-contacts__phone-wrapper {
   position: relative;
 

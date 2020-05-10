@@ -1,7 +1,7 @@
 .download-app {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: top -67px center;
+  background-position: center -67px;
 }
 
 .download-app__container {
@@ -11,7 +11,7 @@
   padding: 23px 20px 0 20px;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: top 109px left;
+  background-position: left 109px;
 }
 
 .download-app__wrapper {
@@ -91,7 +91,7 @@
 @media (min-width: $tablet-width) {
   .download-app {
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: top -110px center;
+    background-position: center -110px;
   }
 
   .download-app__container {
@@ -99,7 +99,7 @@
     width: $tablet-width;
     min-height: 618px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
-    background-position: top 73px center;
+    background-position: center 73px;
   }
 
   .download-app__wrapper {
@@ -138,7 +138,7 @@
     padding-left: 10px;
     padding-right: 10px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-position: bottom left 27px;
+    background-position: 27px bottom;
   }
 
   .download-app__slogan-text {

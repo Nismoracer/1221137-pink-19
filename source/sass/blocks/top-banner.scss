@@ -3,7 +3,7 @@
   background-color: $main-dark-color;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: top -66px center;
+  background-position: center -66px;
 }
 
 .top-banner__header {
@@ -27,7 +27,7 @@
   .top-banner {
     min-height: 330px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: top -110px center;
+    background-position: center -110px;
   }
 
   .top-banner__header {
