@@ -25,9 +25,10 @@
 
 .map__background {
   position: absolute;
-  left: 0;
+  left: 50%;
+  margin-left: -160px;
   bottom: 0;
-  width: 100%;
+  width: 320px;
   height: auto;
   z-index: -1;
 }
@@ -42,7 +43,9 @@
   }
 
   .map__background {
+    margin-left: -330px;
     bottom: -110px;
+    width: 660px;
   }
 
   .map__iframe {
@@ -64,6 +67,8 @@
   }
 
   .map__background {
-    bottom: -100px;
+    margin-left: -480px;
+    bottom: -115px;
+    width: 960px;
   }
 }

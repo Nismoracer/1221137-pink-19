@@ -19,9 +19,11 @@
 
 .navigation__link {
   min-height: 64px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  box-sizing: border-box;
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  text-align: center;
   text-decoration: none;
   color: $menu-text;
   text-transform: uppercase;

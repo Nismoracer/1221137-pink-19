@@ -126,7 +126,7 @@
     position: absolute;
     width: 27px;
     height: 27px;
-    top: 50%;
+    top: 24px;
     right: 18px;
     transform: translateY(-14px);
     background: url("../img/no.svg") no-repeat center;
@@ -141,7 +141,7 @@
     position: absolute;
     width: 22px;
     height: 16px;
-    top: 50%;
+    top: 29px;
     right: 20px;
     transform: scale(1.5) translateY(-6px);
     background: url("../img/yes.svg") no-repeat center;
@@ -187,8 +187,13 @@
     width: 620px;
   }
 
-  .table__cell--no::after,
   .table__cell--yes::after {
+    top: 22px;
+    right: 61px;
+  }
+
+  .table__cell--no::after {
+    top: 22px;
     right: 61px;
   }
 
@@ -236,8 +241,13 @@
     padding-left: 22px;
   }
 
-  .table__cell--no::after,
   .table__cell--yes::after {
+    top: 30px;
+    right: 101px;
+  }
+
+  .table__cell--no::after {
+    top: 30px;
     right: 101px;
   }
 

@@ -71,4 +71,18 @@
     padding-left: 10px;
     padding-right: 4px;
   }
+
+  // .test {
+  //   width: auto;
+  //   height: 331px;
+  //   background-repeat: no-repeat;
+  //   background-position: center -110px;
+  //   background-image: url("../img/bg-back-tablet@1x.jpg");
+
+  //   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  //     background-image: url("../img/bg-back-tablet@2x.jpg");
+  //     background-position: center -110px;
+  //     background-size: auto 1458px;
+  //   }
+  // }
 }
