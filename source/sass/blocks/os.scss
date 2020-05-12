@@ -9,6 +9,7 @@
 
 .os__legend {
   display: none;
+  margin: 0 auto;
 }
 
 .os__header {
@@ -30,6 +31,10 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.os__item {
+  width: 100%;
 }
 
 .os__label {
@@ -113,7 +118,7 @@
   }
 
   .os__legend {
-    display: inline-block;
+    display: block;
     text-align: center;
     text-transform: uppercase;
     padding: 0 24px;

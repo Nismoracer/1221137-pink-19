@@ -107,6 +107,11 @@
 
 .page-header__menu--closed {
   background-image: url("../img/bg-back-mobile@1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: auto 462px;
+  }
   background-position: center top;
   background-repeat: no-repeat;
   box-shadow: inset 0 65px  rgba(0, 0, 0, 0.3);
@@ -122,6 +127,11 @@
     box-shadow: inset 0 106px  rgba(0, 0, 0, 0.3);
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: center -4px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: auto 729px;
+    }
     background-repeat: no-repeat;
   }
 
@@ -154,7 +164,13 @@
 
   .page-header {
     min-height: 393px;
+    background-color: $main-dark-color;
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat center top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2615px auto;
+    }
   }
 
   .page-header--main {

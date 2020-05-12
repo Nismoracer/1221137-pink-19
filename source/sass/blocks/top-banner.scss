@@ -2,6 +2,11 @@
   min-height: 170px;
   background-color: $main-dark-color;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: auto 462px;
+  }
   background-repeat: no-repeat;
   background-position: center -66px;
 }
@@ -26,7 +31,13 @@
 @media (min-width: $tablet-width) {
   .top-banner {
     min-height: 330px;
+    background-color: $main-dark-color;
     background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: auto 729px;
+    }
     background-position: center -110px;
   }
 

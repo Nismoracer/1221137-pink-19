@@ -24,7 +24,6 @@
 @media (min-width: $tablet-width) {
   .likes {
     width: 240px;
-    margin-top: 6px;
     justify-content: space-between;
     flex-direction: row-reverse;
     order: 1;
@@ -33,10 +32,9 @@
   .likes__button {
     margin: 0;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .likes--top-photo {
+  .likes--top {
     width: 120px;
+    margin-top: 6px;
   }
 }

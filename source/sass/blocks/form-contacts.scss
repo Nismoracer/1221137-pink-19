@@ -7,6 +7,7 @@
 
 .form-contacts__legend {
   display: none;
+  margin: 0 auto;
 }
 
 .form-contacts__list {
@@ -39,6 +40,10 @@
   }
 
   &:active {
+    border-color: #d22856;
+  }
+
+  &:focus {
     border-color: #d22856;
   }
 
@@ -124,7 +129,7 @@
   }
 
   .form-contacts__legend {
-    display: inline-block;
+    display: block;
     text-align: center;
     text-transform: uppercase;
     padding: 0 30px;
