@@ -1,5 +1,7 @@
 .photo-item {
   width: 280px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 21px;
 }
 
@@ -46,7 +48,13 @@
   .photo-item {
     width: 300px;
     margin-right: 20px;
-    margin-bottom: 55px;
+    margin-bottom: 21px;
+  }
+
+  .photo-item__link {
+    display: block;
+    width: 300px;
+    height: 300px;
   }
 
   .photo-item:nth-child(2n) {
@@ -71,6 +79,10 @@
     width: 300px;
     margin-right: 20px;
     margin-bottom: 55px;
+  }
+
+  .photo-item__link {
+    height: 400px;
   }
 
   .photo-item:nth-child(2n) {

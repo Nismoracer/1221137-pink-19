@@ -19,6 +19,16 @@
   &--active {
     background-color: #d22856;
   }
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active,
+  :focus {
+    background-color: #d22856;
+    border-color: #d22856;
+  }
 }
 
 .scale__toogle--brightness {
@@ -26,10 +36,29 @@
 }
 
 @media (min-width: $tablet-width) {
-  .scale {
-    box-sizing: border-box;
-    height: 70px;
-    padding-top: 33px;
-    border-bottom: 1px solid #dddfe0;
+  .scale__toogle--size {
+    left: 72%;
+  }
+
+  .scale__toogle--contrast {
+    left: 13%;
+  }
+
+  .scale__toogle--brightness {
+    left: 47%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .scale__toogle--size {
+    left: 25%;
+  }
+
+  .scale__toogle--contrast {
+    left: 86%;
+  }
+
+  .scale__toogle--brightness {
+    left: 56%;
   }
 }
