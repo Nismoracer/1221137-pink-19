@@ -3,12 +3,11 @@
 }
 
 .page-header__toggle {
+  margin-top: 18px;
   width: 52px;
   height: 27px;
   display: block;
   position: relative;
-
-  @include zero-fields;
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -82,7 +81,13 @@
   }
 }
 
+.page-header__logo {
+  margin-top: 18px;
+}
+
 .page-header__logo-image {
+  width: 75px;
+  height: 23px;
   cursor: pointer;
 
   &:hover path {
@@ -99,7 +104,7 @@
   margin: 0 auto;
   box-sizing: border-box;
   height: 65px;
-  padding: 18px 20px 0 20px;
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   background-color: $menu-background-color;
@@ -120,7 +125,19 @@
 @media (min-width: $tablet-width) {
   .page-header__menu {
     height: 106px;
-    padding-top: 40px;
+  }
+
+  .page-header__logo-image {
+    width: 147px;
+    height: 41px;
+  }
+
+  .page-header__logo {
+    margin-top: 22px;
+  }
+
+  .page-header__toggle {
+    margin-top: 40px;
   }
 
   .page-header__menu--closed {
@@ -133,11 +150,6 @@
       background-size: auto 729px;
     }
     background-repeat: no-repeat;
-  }
-
-  .page-header__logo-image {
-    width: 147px;
-    height: 41px;
   }
 }
 
@@ -159,7 +171,7 @@
     background: none;
     box-shadow: none;
     width: 320px;
-    padding-top: 45px;
+    margin-top: 8px;
   }
 
   .page-header {
@@ -169,7 +181,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
-      background-size: 2615px auto;
+      background-size: 2548px auto;
     }
     background-position: center top;
     background-repeat: no-repeat;

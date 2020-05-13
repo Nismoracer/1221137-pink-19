@@ -1,13 +1,12 @@
 .top-photo {
   margin: 0 auto;
   margin-bottom: 20px;
-  overflow: hidden;
 }
 
 .top-photo__image {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .top-photo__link {
@@ -78,12 +77,13 @@
   }
 
   .top-photo__link {
-    width: 700px;
+    max-width: 700px;
+    width: auto;
     height: 509px;
 
     &::before {
       top: 57px;
-      right: 60px;
+      right: 20px;
     }
   }
 
@@ -106,12 +106,13 @@
   }
 
   .top-photo__link {
-    width: 1200px;
+    max-width: 1200px;
+    width: auto;
     height: 506px;
 
     &::before {
       top: 54px;
-      right: 248px;
+      right: 10px;
     }
   }
 
