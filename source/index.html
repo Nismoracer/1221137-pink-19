@@ -10,6 +10,8 @@
       document.createElement( "picture" );
     </script>
     <script src="js/picturefill.min.js" async></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="">
@@ -98,7 +100,7 @@
             </li>
             <li class="proposal__item  proposal__item--change-world">
               <h2 class="proposal__title">Меняет мир вокруг</h2>
-              <p class="proposal__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, <br>чтобы усилить эффект</p>
+              <p class="proposal__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <br>усилить эффект</p>
             </li>
             <li class="proposal__item  proposal__item--make-friends">
               <h2 class="proposal__title">Заводит новых друзей</h2>
@@ -113,7 +115,7 @@
             <p class="stopwatch__text">24</p>
           </div>
           <div class="promo__block">
-            <h2 class="promo__header">Эффект на 24 часа!</h2>
+            <h2 class="promo__header">Эффект<br class="promo__description--desktop"> на 24 часа!</h2>
             <p class="promo__description">Британские ученые провели исследования и доказали, <br class="promo__description--tablet">что положительный эффект <br class="promo__description--desktop">от использования приложения длится целые сутки!</p>
             <a class="promo__link" href="">Узнать больше об исследовании</a>
           </div>
@@ -144,51 +146,51 @@
       <section class="tariffs">
         <div class="tariffs__wrapper  container">
           <h2 class="visually-hidden">Тарифные опции для приложения.</h2>
-          <div class="table">
-            <ul class="table__row">
-              <li class="table__cell  table__cell-name  table__cell--transparent"></li>
-              <li class="table__cell  table__cell--top  table__cell-base">
+          <table class="table">
+            <tr class="table__row">
+              <th class="table__cell  table__cell-name  table__cell--transparent"></th>
+              <th class="table__cell  table__cell--top  table__cell-base">
                 <p class="table__header">база</p>
                 <p class="table__price">1,99 USD</p>
-              </li>
-              <li class="table__cell  table__cell--top  table__cell--narrow"></li>
-              <li class="table__cell  table__cell--top  table__cell--special">
+              </th>
+              <th class="table__cell  table__cell--top  table__cell--narrow"></th>
+              <th class="table__cell  table__cell--top  table__cell--special">
                 <p class="table__header">стандарт</p>
                 <p class="table__price">3,99 USD</p>
-              </li>
-              <li class="table__cell  table__cell--top">
+              </th>
+              <th class="table__cell  table__cell--top  table__cell--unlim">
                 <p class="table__header">анлим</p>
                 <p class="table__price">9,99 USD</p>
-              </li>
-            </ul>
-            <ul class="table__row">
-              <li class="table__cell  table__cell-name">Розовый фильтр</li>
-              <li class="table__cell  table__cell--yes  table__cell-base"  aria-label="Да"></li>
-              <li class="table__cell  table__cell--narrow  table__cell--yes"></li>
-              <li class="table__cell  table__cell--yes"  aria-label="Да">
+              </th>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell  table__cell-name">Розовый фильтр</td>
+              <td class="table__cell  table__cell--yes  table__cell-base"  aria-label="Да"></td>
+              <td class="table__cell  table__cell--narrow  table__cell--yes"></td>
+              <td class="table__cell  table__cell--yes"  aria-label="Да">
                 <p class="table__cell-description">Розовый фильтр</p>
-              </li>
-              <li class="table__cell  table__cell--yes"  aria-label="Да"></li>
-            </ul>
-            <ul class="table__row">
-              <li class="table__cell  table__cell-name">Смайлики</li>
-              <li class="table__cell  table__cell--no  table__cell-base"  aria-label="Нет"></li>
-              <li class="table__cell  table__cell--narrow  table__cell--no"></li>
-              <li class="table__cell  table__cell--yes" aria-label="Да">
+              </td>
+              <td class="table__cell  table__cell--yes"  aria-label="Да"></td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell  table__cell-name">Смайлики</td>
+              <td class="table__cell  table__cell--no  table__cell-base"  aria-label="Нет"></td>
+              <td class="table__cell  table__cell--narrow  table__cell--no"></td>
+              <td class="table__cell  table__cell--yes" aria-label="Да">
                 <p class="table__cell-description">Смайлики</p>
-              </li>
-              <li class="table__cell  table__cell--yes" aria-label="Да"></li>
-            </ul>
-            <ul class="table__row">
-              <li class="table__cell  table__cell-name">Комментарии</li>
-              <li class="table__cell  table__cell--no  table__cell-base" aria-label="Нет"></li>
-              <li class="table__cell  table__cell--narrow  table__cell--no"></li>
-              <li class="table__cell  table__cell--no"  aria-label="Нет">
+              </td>
+              <td class="table__cell  table__cell--yes" aria-label="Да"></td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell  table__cell-name">Комментарии</td>
+              <td class="table__cell  table__cell--no  table__cell-base" aria-label="Нет"></td>
+              <td class="table__cell  table__cell--narrow  table__cell--no"></td>
+              <td class="table__cell  table__cell--no"  aria-label="Нет">
                 <p class="table__cell-description">Комментарии</p>
-              </li>
-              <li class="table__cell  table__cell--yes" aria-label="Да"></li>
-            </ul>
-          </div>
+              </td>
+              <td class="table__cell  table__cell--yes" aria-label="Да"></td>
+            </tr>
+          </table>
           <p class="toogles">
             <button class="toogles__button" type="button" aria-label="1"></button>
             <button class="toogles__button  toogles__button--active" type="button" aria-label="2"></button>
@@ -202,7 +204,7 @@
           <polygon fill="#ffffff" points="297.64,61.905 0,0 595.28,0 "/>
         </svg>
         <div class="container">
-            <h3 class="contacts__header">Остались вопросы? Свяжитесь с нами!</h3>
+          <h3 class="contacts__header">Остались вопросы? Свяжитесь с нами!</h3>
           <div class="contacts__wrapper">
             <div class="contacts__block  contacts__block--phone">
               <p class=contacts__type>Звоните:</p>
@@ -228,7 +230,7 @@
           <img class="map__background" src="img/bg-map-mobile@1x.png" width="320" height="200">
         </picture>
       </section>
-      <footer class="page-footer  page-footer--index">
+      <footer class="page-footer">
         <div class="page-footer__wraper  container">
           <a class="page-footer__logo" aria-label="Мобильное фотоприложение Pink">
             <picture>
@@ -255,7 +257,6 @@
           </div>
         </div>
       </footer>
-      <!-- <div class="test"></div> -->
     </main>
     <script src="js/app.js">
     </script>

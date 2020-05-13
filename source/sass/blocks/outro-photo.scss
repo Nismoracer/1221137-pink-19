@@ -18,7 +18,7 @@
 
 @media (min-width: $tablet-width) {
   .outro-photo {
-    padding-top: 10px;
+    padding-top: 45px;
     padding-bottom: 68px;
   }
 
@@ -27,5 +27,12 @@
     font-size: 18px;
     line-height: 30px;
     width: 425px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .outro-photo {
+    padding-top: 5px;
+    padding-bottom: 65px;
   }
 }

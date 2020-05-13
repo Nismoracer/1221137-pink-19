@@ -62,27 +62,23 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer--photos {
+    padding-top: 57px;
+    padding-bottom: 62px;
+  }
+
+  .page-footer--form {
+    padding-top: 28px;
+    padding-bottom: 3px;
+  }
+
   .page-footer {
     min-height: 198px;
-    padding-top: 66px;
   }
 
   .page-footer__wraper {
     padding-left: 10px;
     padding-right: 4px;
+    padding-top: 35px;
   }
-
-  // .test {
-  //   width: auto;
-  //   height: 331px;
-  //   background-repeat: no-repeat;
-  //   background-position: center -110px;
-  //   background-image: url("../img/bg-back-tablet@1x.jpg");
-
-  //   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  //     background-image: url("../img/bg-back-tablet@2x.jpg");
-  //     background-position: center -110px;
-  //     background-size: auto 1458px;
-  //   }
-  // }
 }

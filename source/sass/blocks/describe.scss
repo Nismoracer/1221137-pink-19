@@ -7,6 +7,7 @@
 
 .describe__legend {
   display: none;
+  margin: 0 auto;
 }
 
 .describe__header {
@@ -30,6 +31,18 @@
   resize: none;
   padding: 14px 18px;
 
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active {
+    border-color: #d22856;
+  }
+
+  &:focus {
+    border-color: #d22856;
+  }
+
   &::placeholder {
     font-family: "Open Sans", "Lucida Grande", sans-serif;
     font-size: 18px;
@@ -44,7 +57,7 @@
     padding-top: 34px;
     padding-bottom: 51px;
     margin-top: 32px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   .describe__header {
@@ -52,7 +65,7 @@
   }
 
   .describe__legend {
-    display: inline-block;
+    display: block;
     text-align: center;
     text-transform: uppercase;
     padding: 0 35px;

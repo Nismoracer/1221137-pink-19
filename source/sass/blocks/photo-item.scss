@@ -1,5 +1,7 @@
 .photo-item {
   width: 280px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 21px;
 }
 
@@ -46,7 +48,15 @@
   .photo-item {
     width: 300px;
     margin-right: 20px;
-    margin-bottom: 55px;
+    margin-bottom: 21px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo-item__link {
+    display: block;
+    width: 300px;
+    height: 300px;
   }
 
   .photo-item:nth-child(2n) {
@@ -54,16 +64,22 @@
   }
 
   .photo-item__description {
-    min-height: 155px;
     padding-top: 24px;
     padding-left: 27px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  .likes {
+    margin-top: auto;
+    margin-bottom: 0;
   }
 
   .photo-item__comment {
-    flex-grow: 1;
+    min-height: 53px;
   }
 }
 
@@ -72,6 +88,10 @@
     width: 300px;
     margin-right: 20px;
     margin-bottom: 55px;
+  }
+
+  .photo-item__link {
+    height: 400px;
   }
 
   .photo-item:nth-child(2n) {
