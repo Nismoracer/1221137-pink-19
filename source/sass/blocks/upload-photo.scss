@@ -107,8 +107,7 @@
   background-color: transparent;
 }
 
-.upload-photo__icon,
-.upload-photo__icon--brightness {
+.upload-photo__icon {
   fill: #b5b9be;
 
   &:hover {
@@ -160,6 +159,7 @@
   .upload-photo__brightness-button {
     text-align: left;
     width: 26px;
+    pointer-events: none;
   }
 
   .upload-photo__item--size,
@@ -216,21 +216,22 @@
     margin-bottom: 48px;
   }
 
-  .upload-photo__icon--brightness {
-    padding-left: 6px;
-    width: 16px;
-    height: 16px;
-    fill: #d22856;
-  }
-
   .upload-photo__modes-item--contrast {
     margin-top: 27px;
     margin-bottom: 20px;
   }
 
-  .upload-photo__icon {
+  .upload-photo__icon--size,
+  .upload-photo__icon--contrast {
     width: 24px;
     height: 24px;
+    fill: #d22856;
+  }
+
+  .upload-photo__icon--brightness {
+    padding-left: 6px;
+    width: 16px;
+    height: 16px;
     fill: #d22856;
   }
 
@@ -299,15 +300,16 @@
     margin-top: 23px;
   }
 
+  .upload-photo__icon--size,
+  .upload-photo__icon--contrast {
+    width: 46px;
+    height: 46px;
+  }
+
   .upload-photo__icon--brightness {
     padding-left: 6px;
     width: 32px;
     height: 32px;
-  }
-
-  .upload-photo__icon {
-    width: 46px;
-    height: 46px;
   }
 
   .upload-photo__buttons {

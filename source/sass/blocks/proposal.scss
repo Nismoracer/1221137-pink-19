@@ -3,6 +3,10 @@
   border-bottom: 1px solid transparent;
 }
 
+.proposal br {
+  display: none;
+}
+
 .proposal__header {
   position: relative;
   background-color: $main-layer-color;
@@ -91,6 +95,10 @@
     font-size: 40px;
     line-height: 48px;
     padding-bottom: 0;
+  }
+
+  .proposal br {
+    display: block;
   }
 
   .proposal__bottom-text {

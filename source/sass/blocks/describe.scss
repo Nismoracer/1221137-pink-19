@@ -23,6 +23,7 @@
 
 .describe__textarea {
   display: block;
+  overflow-y: auto;
   box-sizing: border-box;
   margin: 0 auto;
   width: 280px;

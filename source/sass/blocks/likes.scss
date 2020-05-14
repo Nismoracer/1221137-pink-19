@@ -5,12 +5,12 @@
 .likes__button {
   @include zero-fields;
   margin-right: 18px;
-  width: 13px;
-  height: 13px;
+  width: 14px;
+  height: 14px;
   display: block;
   border: none;
   cursor: pointer;
-  background: url("../img/icon-heart.svg") no-repeat center;
+  background: url("../img/icon-heart.svg") no-repeat 1px center;
 }
 
 .likes_text-wrapper {

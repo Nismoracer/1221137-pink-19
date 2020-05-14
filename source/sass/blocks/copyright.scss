@@ -7,17 +7,16 @@
 .copyright__name {
   text-align: left;
   width: 95px;
-  padding-left: 5px;
-  padding-bottom: 9px;
+  margin-bottom: 9px;
+  margin-right: 7px;
   display: block;
   color: #283645;
   font-size: 14px;
   line-height: 18px;
 }
 
-.copyright__link-image {
-  width: 41px;
-  height: auto;
+.copyright__link-logo {
+  fill: #d22856;
 }
 
 @media (min-width: $tablet-width) {
