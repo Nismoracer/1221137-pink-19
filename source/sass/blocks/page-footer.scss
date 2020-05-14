@@ -43,13 +43,13 @@
 
   .page-footer {
     min-height: 128px;
-    padding-top: 30px;
+    padding-top: 34px;
   }
 
   .page-footer__wraper {
     box-sizing: border-box;
     padding-left: 20px;
-    padding-right: 14px;
+    padding-right: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -57,7 +57,7 @@
   }
 
   .page-footer__logo {
-    margin-top: 4px;
+    margin-top: 2px;
   }
 }
 
@@ -76,9 +76,14 @@
     min-height: 198px;
   }
 
+  .page-footer--photo {
+    padding-top: 63px;
+    padding-bottom: 62px;
+  }
+
   .page-footer__wraper {
     padding-left: 10px;
-    padding-right: 4px;
-    padding-top: 35px;
+    padding-right: 11px;
+    padding-top: 32px;
   }
 }

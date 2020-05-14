@@ -24,8 +24,10 @@
   display: block;
   width: 50px;
   height: 50px;
+  padding-top: 12px;
+  text-align: center;
   box-sizing: border-box;
-  border: 2px solid #e9ebec;
+  border: 3px solid #e9ebec;
   border-radius: 50%;
 
   &:hover {
@@ -38,23 +40,16 @@
   }
 }
 
-.social__link--tw {
-  background: url("../img/icon-twitter.svg") no-repeat center;
-}
-
-.social__link--fb {
-  background: url("../img/icon-facebook.svg") no-repeat center;
-}
-
-.social__link--ytube {
-  background: url("../img/icon-youtube.svg") no-repeat center;
+.social__link--youtube {
+  padding-top: 11px;
+  padding-left: 5px;
 }
 
 @media (min-width: $tablet-width) {
   .social {
-    padding-top: 9px;
+    padding-top: 6px;
     padding-bottom: 0;
-    padding-right: 10px;
+    padding-right: 20px;
   }
 }
 
