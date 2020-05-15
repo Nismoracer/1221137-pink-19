@@ -45,10 +45,11 @@
   }
 
   &::placeholder {
-    font-family: "Open Sans", "Lucida Grande", sans-serif;
-    font-size: 18px;
-    line-height: 30px;
-    color: $main-dark-color;
+    @include textarea_placeholder;
+  }
+
+  &::-ms-input-placeholder {
+    @include textarea_placeholder;
   }
 }
 

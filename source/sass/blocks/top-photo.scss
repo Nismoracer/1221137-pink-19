@@ -49,16 +49,20 @@
 }
 
 .top-photo__author-wrapper {
-  padding-right: 5px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .top-photo__author {
   @include zero-fields;
-  font-weight: 700;
+  padding-right: 4px;
+  font-size: 14px;
   word-wrap: break-word;
+  font-weight: 700;
 }
 
 .top-photo__comment-date {
+  display: block;
   text-transform: uppercase;
   font-size: 12px;
   line-height: 24px;

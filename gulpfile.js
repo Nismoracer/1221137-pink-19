@@ -18,6 +18,7 @@ var svgstore = require("gulp-svgstore");
 
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
+var minifyHTML = require("gulp-minify-html");
 
 var server = require("browser-sync").create();
 
@@ -27,12 +28,12 @@ gulp.task("clean", function () {
 
 gulp.task("copy", function () {
   return gulp.src([
-      "source/fonts/**/*.{woff,woff2}",
-      "source/js/*.min.js",
-      "source/*.ico"
+    "source/fonts/**/*.{woff,woff2}",
+    "source/js/*.min.js",
+    "source/*.ico"
     ], {
       base: "source"
-})
+  })
     .pipe(gulp.dest("build"));
 });
 
@@ -59,18 +60,18 @@ gulp.task("js", function() {
 
 gulp.task("img", function () {
   return gulp.src("source/img/*")
-  .pipe(imagemin([
-    imagemin.gifsicle({interlaced: true}),
-    imagemin.mozjpeg({quality: 75, progressive: true}),
-    imagemin.optipng({optimizationLevel: 3}),
-    imagemin.svgo({
+    .pipe(imagemin([
+      imagemin.gifsicle({interlaced: true}),
+      imagemin.mozjpeg({quality: 75, progressive: true}),
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.svgo({
         plugins: [
-            {removeViewBox: false},
-            {cleanupIDs: true}
+          {removeViewBox: false},
+          {cleanupIDs: true}
         ]
       })
     ]))
-  .pipe(gulp.dest("build/img"))
+    .pipe(gulp.dest("build/img"))
 });
 
 gulp.task("webp", function () {
@@ -83,7 +84,7 @@ gulp.task("sprite", function() {
   return gulp.src("build/img/icon-*.svg")
   .pipe(svgstore({
     inlineSvg: true
-    }))
+  }))
   .pipe(rename("sprite.svg"))
   .pipe(gulp.dest("build/img"))
 });
@@ -91,9 +92,17 @@ gulp.task("sprite", function() {
 gulp.task("html", function () {
   return gulp.src("source/*.html")
     .pipe(posthtml([
-include()
-]))
+      include()
+    ]))
     .pipe(gulp.dest("build"));
+});
+
+gulp.task("minify-html", function() {
+	var opts = {comments:true,spare:true};
+
+  return gulp.src("build/*.html")
+    .pipe(minifyHTML(opts))
+    .pipe(gulp.dest("build"))
 });
 
 gulp.task("server", function () {
@@ -111,5 +120,5 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("build", gulp.series("clean", "css", "js", "img", "webp", "sprite", "copy", "html"));
+gulp.task("build", gulp.series("clean", "css", "js", "img", "webp", "sprite", "copy", "html", "minify-html"));
 gulp.task("start", gulp.series("build", "server"));

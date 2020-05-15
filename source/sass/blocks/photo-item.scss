@@ -2,7 +2,7 @@
   width: 280px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .photo-item__image {
@@ -22,16 +22,20 @@
 }
 
 .photo-item__author-wrapper {
-  padding-right: 5px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .photo-item__author {
   @include zero-fields;
+  padding-right: 4px;
+  font-size: 14px;
   word-wrap: break-word;
   font-weight: 700;
 }
 
 .photo-item__comment-date {
+  display: block;
   text-transform: uppercase;
   font-size: 12px;
   line-height: 24px;
@@ -48,7 +52,7 @@
   .photo-item {
     width: 300px;
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
     display: flex;
     flex-direction: column;
   }

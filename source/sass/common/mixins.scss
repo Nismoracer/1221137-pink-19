@@ -34,6 +34,13 @@
   font-weight: 700;
 }
 
+@mixin textarea_placeholder {
+  font-family: "Open Sans", "Lucida Grande", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: $main-dark-color;
+}
+
 @mixin form-label {
   @include zero-fields;
   color: #d22856;
@@ -52,6 +59,15 @@
   line-height: 58px;
 
   &::placeholder {
+    font-family: "Open Sans", "Lucida Grande", sans-serif;
+    color: $main-dark-color;
+    font-size: 18px;
+    line-height: 58px;
+    opacity: 1;
+  }
+
+  &::-ms-input-placeholder {
+    font-family: "Open Sans", "Lucida Grande", sans-serif;
     color: $main-dark-color;
     font-size: 18px;
     line-height: 58px;
