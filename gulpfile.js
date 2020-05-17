@@ -10,7 +10,7 @@ var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
-var uglify = require('gulp-uglify');
+var uglify = require("gulp-uglify");
 
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
@@ -29,7 +29,6 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/js/*.min.js",
     "source/*.ico"
     ], {
       base: "source"
@@ -55,7 +54,8 @@ gulp.task("css", function () {
 gulp.task("js", function() {
   return gulp.src("source/js/*.js")
     .pipe(uglify())
-    .pipe(gulp.dest("source/js"))
+    .pipe(rename({suffix: ".min"}))
+    .pipe(gulp.dest("build/js"))
 });
 
 gulp.task("img", function () {

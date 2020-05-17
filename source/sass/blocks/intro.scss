@@ -4,12 +4,15 @@
   text-align: center;
   padding-top: 15px;
   padding-bottom: 3px;
+}
+
+.intro__conditions {
   font-size: 14px;
   line-height: 30px;
   color: $main-dark-color;
 }
 
-.intro--tablet {
+.intro__conditions--tablet {
   display: none;
 }
 
@@ -26,8 +29,10 @@
     width: 495px;
     padding-top: 37px;
     padding-bottom: 0;
+  }
+
+  .intro__conditions {
     font-size: 18px;
-    line-height: 30px;
   }
 
   .intro__photo-text {
@@ -36,7 +41,7 @@
     padding-bottom: 76px;
   }
 
-  .intro--tablet {
+  .intro__conditions--tablet {
     @include zero-fields;
     padding-bottom: 2px;
     display: inline-block;
@@ -48,7 +53,7 @@
     width: 760px;
   }
 
-  .intro--tablet {
+  .intro__conditions--tablet {
     width: 340px;
   }
 

@@ -155,11 +155,11 @@
 
 @media (max-width: $no-desktop-width) {
   .page-header__menu--closed + .navigation,
-  .page-header--nojs .page-header__toggle {
+  .page-header__menu--nojs .page-header__toggle {
     display: none;
   }
 
-  .page-header--nojs .navigation {
+  .page-header__menu--nojs .navigation {
     display: block;
   }
 }
