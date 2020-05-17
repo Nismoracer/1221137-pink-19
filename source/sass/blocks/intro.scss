@@ -2,8 +2,8 @@
   box-sizing: border-box;
   width: 275px;
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 3px;
+  padding-top: 30px;
+  padding-bottom: 5px;
 }
 
 .intro__conditions {
@@ -19,15 +19,17 @@
 .intro__photo-text {
   width: 245px;
   margin: 0 auto;
-  padding-top: 30px;
-  padding-bottom: 46px;
+  padding-top: 14px;
+  padding-bottom: 44px;
+  font-size: 14px;
+  line-height: 30px;
 }
 
 @media (min-width: $tablet-width) {
   .intro {
     margin-bottom: 0;
     width: 495px;
-    padding-top: 37px;
+    padding-top: 74px;
     padding-bottom: 0;
   }
 
@@ -37,8 +39,10 @@
 
   .intro__photo-text {
     width: 445px;
-    padding-top: 55px;
+    padding-top: 18px;
     padding-bottom: 76px;
+    font-size: 18px;
+    line-height: 30px;
   }
 
   .intro__conditions--tablet {

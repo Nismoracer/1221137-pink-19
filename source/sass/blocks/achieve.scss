@@ -2,7 +2,7 @@
   @include zero-fields;
   box-sizing: border-box;
   border: none;
-  padding: 28px 20px 46px 20px;
+  padding: 30px 20px 46px 20px;
   order: 1;
   overflow: hidden;
   background-color: $bg-blocks-color;
@@ -103,6 +103,7 @@
     order: 3;
     background-color: transparent;
     border: 2px solid $bg-blocks-color;
+    padding-top: 28px;
     padding-bottom: 54px;
     margin-top: 20px;
     margin-bottom: 20px;
