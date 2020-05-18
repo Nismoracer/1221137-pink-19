@@ -19,10 +19,11 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header  page-header--main">
+      <h1 class="visually-hidden">Фотоприложение "Pink": скачай, и взгляни на жизнь иначе!</h1>
       <div class="page-header__container">
         <div class="page-header__wrapper">
           <!-- Для закрытия меню нужно добавить тегу Div ниже класс page-header__menu--closed -->
-          <div class="page-header__menu  page-header__menu--opened  page-header--nojs">
+          <div class="page-header__menu  page-header__menu--opened  page-header__menu--nojs">
             <a class="page-header__logo" aria-label="На главную">
               <picture>
                 <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
@@ -87,7 +88,6 @@
       </section>
     </header>
     <main class="page-index">
-      <h1 class="visually-hidden">Фотоприложение "Pink": скачай, и взгляни на жизнь иначе!</h1>
       <section class="proposal">
         <div class="proposal__header">
           <div class="container">
@@ -98,18 +98,24 @@
             <use xlink:href="#icon-bg-triangle-white"></use>
           </svg>
         </div>
-        <div class="container">
+        <div class="proposal__body  container">
+          <div class="proposal__image  proposal__image--make-funny">
+          </div>
+          <div class="proposal__image  proposal__image--change-world">
+          </div>
+          <div class="proposal__image  proposal__image--make-friends">
+          </div>
           <ul class="proposal__list">
-            <li class="proposal__item  proposal__item--make-funny">
+            <li class="proposal__item">
               <h2 class="proposal__title">Поднимает настроение</h2>
               <p class="proposal__description">Приложение позволит вам победить осеннюю
                 хандру и депрессию буквально в несколько кликов!</p>
             </li>
-            <li class="proposal__item  proposal__item--change-world">
+            <li class="proposal__item">
               <h2 class="proposal__title">Меняет мир вокруг</h2>
               <p class="proposal__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы&nbsp;<br>усилить эффект</p>
             </li>
-            <li class="proposal__item  proposal__item--make-friends">
+            <li class="proposal__item">
               <h2 class="proposal__title">Заводит новых друзей</h2>
               <p class="proposal__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
@@ -123,7 +129,7 @@
           </div>
           <div class="promo__block">
             <h2 class="promo__header">Эффект&nbsp;<br class="promo__description--desktop">на 24 часа!</h2>
-            <p class="promo__description">Британские ученые провели исследования и доказали, <br class="promo__description--tablet">что положительный эффект <br class="promo__description--desktop">от использования приложения длится целые сутки!</p>
+            <p class="promo__description">Британские ученые провели исследования и доказали, <br class="promo__description--tablet">что положительный эффект&nbsp;<br class="promo__description--desktop">от использования приложения длится целые сутки!</p>
             <a class="promo__link" href="">Узнать больше об исследовании</a>
           </div>
         </div>
@@ -131,12 +137,12 @@
       <section class="feedback">
         <h2 class="visually-hidden">Отзывы о приложении</h2>
         <div class="feedback__wrapper  container">
-          <button class="feedback__previous">
+          <button class="feedback__previous" type="button">
             <svg width="22" height="42">
               <use xlink:href="#icon-review-arrow-left" aria-label="Предыдущий комментарий"></use>
             </svg>
           </button>
-          <button class="feedback__next">
+          <button class="feedback__next" type="button">
             <svg width="22" height="42">
               <use xlink:href="#icon-review-arrow-right" aria-label="Следующий комментарий"></use>
             </svg>
